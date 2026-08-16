@@ -34,7 +34,11 @@ Werkzeug — **stattdessen den Master forken**:
   Zweck divergiert). Ein Audit liest das als *deklarierte Divergenz* statt
   stiller Kopie.
 
-Importieren, solange der Zweck gleich bleibt; forken, wenn er divergiert.
+Die volle Leiter: **Voll-Import** (Zweck identisch) → **partieller Import**
+(nur die benötigten Teile nutzen — legitim, solange die *Funktionseinheit*
+trägt; Kapseln sollten genau dafür breit und teilnutzbar gebaut sein) →
+**Fork** (erst wenn der Zweck wirklich aus der Funktionseinheit
+herausdivergiert). Teilnutzung ist nie ein Fork-Grund.
 
 ## Schnellstart
 

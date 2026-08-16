@@ -33,7 +33,11 @@ instead**:
   purpose diverged). An audit reads that as *declared divergence* instead of a
   silent copy.
 
-Import when the purpose stays the same; fork when it diverges.
+The full ladder: **full import** (identical purpose) → **partial import** (use
+only the parts you need — legitimate as long as the *functional unit* fits;
+capsules should be built broad and partially consumable for exactly this) →
+**fork** (only when the purpose truly diverges out of the functional unit).
+Partial use is never a reason to fork.
 
 ## Quick start
 

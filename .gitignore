@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.env
+*.db
+.idea/
+.vscode/
+data/
+# Forschungsdaten bleiben im Lab, nie im Template-Master
+_results/
+_sources/
+out/
+*.pyc

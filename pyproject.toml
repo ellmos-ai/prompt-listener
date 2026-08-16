@@ -1,0 +1,16 @@
+[project]
+name = "prompt-listener"
+version = "1.0.0"
+description = "Versioned fork-master template: 5-stage prompt/session analysis pipeline plus AgentEvent v2 provenance schema for human-AI interaction research"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Lukas Geiger" }]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

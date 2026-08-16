@@ -1,0 +1,1151 @@
+{
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "turn_index": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "actor_kind": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "human",
+        "agent",
+        "tool",
+        "mcp_server",
+        "system",
+        "skill",
+        "memory",
+        "retrieved_content",
+        "other",
+        null
+      ]
+    },
+    "source_channel": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "user",
+        "system_developer",
+        "agent",
+        "tool_result",
+        "rag_content",
+        "skill",
+        "memory",
+        "mcp_output",
+        "other",
+        null
+      ]
+    },
+    "origin_kind": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "message_origin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "trust_boundary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "trusted",
+        "untrusted",
+        "external",
+        "internal",
+        "privileged",
+        "lower_privilege",
+        "cross_boundary",
+        "other",
+        null
+      ]
+    },
+    "transport": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "stdio",
+        "sse",
+        "streamable_http",
+        "other",
+        null
+      ]
+    },
+    "mcp_server_id": {
+      "type": "string"
+    },
+    "mcp_tool_name": {
+      "type": "string"
+    },
+    "mcp_capability_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tool_manifest_hash": {
+      "type": "string"
+    },
+    "tool_description_hash": {
+      "type": "string"
+    },
+    "resource_uri_hash": {
+      "type": "string"
+    },
+    "memory_read_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "memory_write_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requested_action": {
+      "type": "string"
+    },
+    "planned_action": {
+      "type": "string"
+    },
+    "executed_action": {
+      "type": "string"
+    },
+    "external_effect": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attestation_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "unknown",
+        "not_applicable",
+        "attested_valid",
+        "attested_invalid",
+        "unattested",
+        null
+      ]
+    },
+    "review_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "pending",
+        "not_required",
+        "review_required",
+        "reviewed_ok",
+        "reviewed_flagged",
+        null
+      ]
+    },
+    "source_authority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "instruction_privilege": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "capability_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "context_reentry": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "handoff_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "instruction_hierarchy_level": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "system_policy",
+        "developer_project",
+        "user",
+        "agent",
+        "tool_output",
+        "retrieved_content",
+        "skill_plugin",
+        "memory",
+        null
+      ]
+    },
+    "override_attempt_flag": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "policy_projection": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "authorized_observations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "authorized_capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "projection_applied": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "capability_restriction_applied": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "model_visible_untrusted_channel": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "output_validation_result": {
+          "type": "string"
+        },
+        "security_game": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "instruction_integrity": {
+              "type": "string"
+            },
+            "retrieval_confidentiality": {
+              "type": "string"
+            },
+            "capability_integrity": {
+              "type": "string"
+            }
+          }
+        },
+        "permitted_leakage_scope": {
+          "type": "string"
+        }
+      }
+    },
+    "toolcall_attribution": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "proposed_tool_call": {
+          "type": "string"
+        },
+        "user_intent_support": {
+          "type": "string"
+        },
+        "untrusted_observation_support": {
+          "type": "string"
+        },
+        "counterfactual_without_untrusted_observation": {
+          "type": "string"
+        },
+        "shadow_replay_pass": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "causal_driver": {
+          "type": "string"
+        },
+        "attribution_confidence": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "tool_call_allowed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "manual_review_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "adaptive_attack_run": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "optimizer_loop": {
+          "type": "string"
+        },
+        "diagnoser_label": {
+          "type": "string"
+        },
+        "payload_generation_history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "best_attack_variant": {
+          "type": "string"
+        },
+        "adaptive_asr_delta": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "defense_degradation": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "attack_budget": {
+          "type": "string"
+        },
+        "heldout_attack_family": {
+          "type": "string"
+        }
+      }
+    },
+    "context_authorization": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "context_dependent_task": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "context_dependency_allowed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "runtime_observation_source": {
+          "type": "string"
+        },
+        "runtime_observation_trust": {
+          "type": "string"
+        },
+        "context_suppression_risk": {
+          "type": "string"
+        },
+        "context_use_justification": {
+          "type": "string"
+        },
+        "context_hijack_indicator": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "trustworthiness_utility_latency_tradeoff": {
+          "type": "string"
+        }
+      }
+    },
+    "long_horizon_episode": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "episode_id": {
+          "type": "string"
+        },
+        "turn_span": {
+          "type": "string"
+        },
+        "attack_stage": {
+          "type": "string"
+        },
+        "objective_shift": {
+          "type": "string"
+        },
+        "state_delta": {
+          "type": "string"
+        },
+        "memory_write_delta": {
+          "type": "string"
+        },
+        "tool_chain_delta": {
+          "type": "string"
+        },
+        "task_injection_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "intent_hijacking_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "objective_drifting_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "memory_poisoning_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "skill_supply_chain_certificate": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "skill_file_hash": {
+          "type": "string"
+        },
+        "skill_origin": {
+          "type": "string"
+        },
+        "declared_capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "executable_surface": {
+          "type": "string"
+        },
+        "hidden_instruction_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "context_dependent_attack_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "harmful_action_surface": {
+          "type": "string"
+        },
+        "authorization_framework_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "skill_review_status": {
+          "type": "string"
+        }
+      }
+    },
+    "mcp_client_security_profile": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "mcp_client_id": {
+          "type": "string"
+        },
+        "tool_surface_id": {
+          "type": "string"
+        },
+        "static_validation": {
+          "type": "string"
+        },
+        "parameter_visibility": {
+          "type": "string"
+        },
+        "injection_detection": {
+          "type": "string"
+        },
+        "user_warning_surface": {
+          "type": "string"
+        },
+        "execution_sandbox": {
+          "type": "string"
+        },
+        "audit_logging": {
+          "type": "string"
+        },
+        "cross_tool_poisoning_risk": {
+          "type": "string"
+        },
+        "hidden_parameter_risk": {
+          "type": "string"
+        },
+        "unauthorized_tool_invocation_risk": {
+          "type": "string"
+        }
+      }
+    },
+    "tool_lifecycle_ledger": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "registration_origin": {
+          "type": "string"
+        },
+        "registration_time": {
+          "type": "string"
+        },
+        "origin_binding": {
+          "type": "string"
+        },
+        "lifecycle_consistency": {
+          "type": "string"
+        },
+        "third_party_script_surface": {
+          "type": "string"
+        },
+        "tool_hijack_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "tool_framing_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "metadata_role_drift": {
+          "type": "string"
+        },
+        "traceable_registration_log": {
+          "type": "string"
+        }
+      }
+    },
+    "automated_attacker_profile": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "attack_optimizer": {
+          "type": "string"
+        },
+        "attacker_model": {
+          "type": "string"
+        },
+        "attacker_safety_tuning": {
+          "type": "string"
+        },
+        "task_universal_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "heldout_task_transfer": {
+          "type": "string"
+        },
+        "ood_domain_transfer": {
+          "type": "string"
+        },
+        "frontier_transfer_status": {
+          "type": "string"
+        },
+        "compute_budget": {
+          "type": "string"
+        },
+        "attack_cost": {
+          "type": "string"
+        }
+      }
+    },
+    "leak_channel_record": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "leak_channel": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "output",
+            "inter_agent_message",
+            "shared_memory",
+            "tool_argument",
+            "handoff",
+            "log_reentry",
+            "resource_write",
+            "persistent_state_change",
+            null
+          ]
+        }
+      }
+    },
+    "utility_security_balance": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "task_success": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "attack_success": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "false_block": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "false_pass": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "utility_under_attack": {
+          "type": "string"
+        },
+        "over_refusal": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "recovery_possible": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "manual_review_cost": {
+          "type": "string"
+        }
+      }
+    },
+    "advice_front_ledger": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "reference_source": {
+          "type": "string"
+        },
+        "same_run_reference_risk": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "advice_scope": {
+          "type": "string"
+        },
+        "matched_control_id": {
+          "type": "string"
+        },
+        "heldout_attack_family": {
+          "type": "string"
+        },
+        "positive_control_status": {
+          "type": "string"
+        },
+        "negative_control_status": {
+          "type": "string"
+        },
+        "tail_after_allowances": {
+          "type": "string"
+        }
+      }
+    },
+    "shadow_tail_ledger": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "provenance_node_ref": {
+          "type": "string"
+        },
+        "tool_or_mcp_channel": {
+          "type": "string"
+        },
+        "attestation_ref": {
+          "type": "string"
+        },
+        "advice_source": {
+          "type": "string"
+        },
+        "tail_sink": {
+          "type": "string"
+        },
+        "effective_channel_rank": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "source_repair_status": {
+          "type": "string"
+        }
+      }
+    },
+    "provenance_graph": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "node_id": {
+                "type": "string"
+              },
+              "kind": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "user_prompt",
+                  "tool_description",
+                  "tool_output",
+                  "resource",
+                  "memory",
+                  "skill",
+                  "mcp_server",
+                  "decision",
+                  null
+                ]
+              },
+              "label": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_node_id": {
+                "type": "string"
+              },
+              "target_node_id": {
+                "type": "string"
+              },
+              "kind": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "read_by",
+                  "summarized_into",
+                  "used_as_evidence",
+                  "triggered_action",
+                  null
+                ]
+              }
+            }
+          }
+        },
+        "trusted_evidence_missing": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "tool_call_boundary_gate": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "rbase_rules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rtask_rules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "risk_categories": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "write",
+              "delete",
+              "shell",
+              "network",
+              "token_secret",
+              "stdio_mcp_start",
+              "unknown_remote_server",
+              "path_outside_project",
+              "exfiltration_target",
+              "other"
+            ]
+          }
+        },
+        "confirmed_before_first_risky_use": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "checked_per_toolcall": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "llm_signal_only": {
+          "type": "boolean"
+        }
+      }
+    },
+    "mcp_capability_attestation": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "declared_capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "observed_capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "authentication": {
+          "type": "string"
+        },
+        "signature_or_attestation": {
+          "type": "string"
+        },
+        "origin_tagging": {
+          "type": "string"
+        },
+        "message_integrity": {
+          "type": "string"
+        },
+        "transport": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "stdio",
+            "sse",
+            "streamable_http",
+            "other",
+            null
+          ]
+        },
+        "privilege_escalation_delta": {
+          "type": "string"
+        }
+      }
+    },
+    "scanner_findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scanner_name": {
+            "type": "string"
+          },
+          "scanner_version": {
+            "type": "string"
+          },
+          "rule_id": {
+            "type": "string"
+          },
+          "finding_type": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string"
+          },
+          "evidence_span": {
+            "type": "string"
+          },
+          "server_config_path": {
+            "type": "string"
+          },
+          "offline_scan": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "needs_manual_review": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "regression_test_case": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "attack_id": {
+          "type": "string"
+        },
+        "fixture_version": {
+          "type": "string"
+        },
+        "case_role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "positive_attack",
+            "benign_control",
+            "advice_leak_control",
+            null
+          ]
+        },
+        "split": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "development",
+            "heldout",
+            null
+          ]
+        },
+        "source": {
+          "type": "string"
+        },
+        "provenance_ref": {
+          "type": "string"
+        },
+        "attack_class": {
+          "type": "string"
+        },
+        "event_form": {
+          "type": "string"
+        },
+        "event_payload": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "expected_gate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "allow",
+            "review",
+            "block",
+            null
+          ]
+        },
+        "actual_gate": {
+          "type": "string"
+        },
+        "leak_channel": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "output",
+            "inter_agent_message",
+            "shared_memory",
+            "tool_argument",
+            "handoff",
+            "log_reentry",
+            "resource_write",
+            "persistent_state_change",
+            null
+          ]
+        },
+        "matched_control_id": {
+          "type": "string"
+        },
+        "heldout_attack_family": {
+          "type": "string"
+        },
+        "same_run_reference_risk": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "label_visible_to_system_under_test": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "falsification_hint": {
+          "type": "string"
+        },
+        "leak": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "tool_misuse": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "memory_poisoning": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "state_change": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "task_success": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "attack_success": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "false_positive": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "false_negative": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "event_id",
+    "session_id"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentEvent",
+  "description": "AgentEvent v2 -- Datenschema (kein Enforcement, kein Wirksamkeitsnachweis). Siehe schema/agent_event_v2.py Moduldocstring."
+}

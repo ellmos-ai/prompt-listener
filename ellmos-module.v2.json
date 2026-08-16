@@ -1,0 +1,22 @@
+{
+  "schema": "ellmos.module.v2",
+  "id": "prompt-listener",
+  "display_name": "prompt-listener",
+  "category": "quality",
+  "kind": "template",
+  "status": "active",
+  "visibility": "public",
+  "provides": ["quality.prompt-analysis", "quality.agent-event-provenance"],
+  "requires": [],
+  "optional": ["automation.default"],
+  "conflicts": [],
+  "surfaces": ["library", "cli", "template"],
+  "state": { "ownership": "external", "location": "project" },
+  "boundaries": {
+    "network": "none",
+    "data": "user-local",
+    "platforms": ["windows", "macos", "linux"]
+  },
+  "source_of_truth": { "type": "local-directory", "path": "." },
+  "adapters": []
+}

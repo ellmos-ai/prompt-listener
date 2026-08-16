@@ -1,0 +1,34 @@
+# prompt-listener
+
+> Versioned fork-master template: 5-stage prompt/session analysis + AgentEvent
+> v2 provenance schema.
+> Last-checked: 2026-08-16 | Version: 1.0.0 | Tests: 14 passed
+
+## Core idea
+
+A FORK-MASTER, not a shared dependency: fork the logic when your purpose
+diverges, register the fork in FORKS.md (declared divergence beats silent
+copies), the master stays versioned and tested. Import only when the purpose
+stays identical.
+
+## Components
+
+- prompt_analyzer.py: JSONL session logs -> extraction -> topic filter -> LLM
+  classification (type/topic/purpose/intent/method) -> aggregation ->
+  statistics. Stages 0-1 dependency-free (--dry-run); stages 2-4 use an LLM
+  runner as an optional, detected neighbour.
+- schema/agent_event_v2.py (+ JSON Schema): stdlib-only provenance ledger --
+  AgentEvent core + 18 sub-ledgers (source, authority, trust boundary,
+  tool/MCP context, memory influence, planned vs executed action, gate
+  decision, review status).
+- fixture_corpus.py + tests/ (14 tests, synthetic fixtures only).
+
+## Known forks (see FORKS.md)
+
+TOM-lm corpus_extract.py (user-model building) · AI-LAB research working copy
+(keeps private corpora/_results).
+
+## Boundaries
+
+Research data (_results/, _sources/) never enters this repo (gitignored).
+No network, no API key needed for stages 0-1.

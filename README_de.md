@@ -1,9 +1,12 @@
 # prompt-listener
 
-> **Ein Fork-Master-Template, keine geteilte Abhängigkeit.** Ein versioniertes
-> Master-Muster zur Analyse von Mensch-KI-Interaktionen: forke es, divergiere
-> bewusst, registriere deinen Fork — der Master bleibt sauber, dein Fork lebt
-> sein eigenes Leben.
+> **Eine zweckscharfe Funktionseinheit — wie eine Zelle.** Ihr einer Zweck:
+> Prompts aus Agent-Sessions einsammeln und auswerten, und die Daten an
+> beliebige Verwerter weitergeben (Workflow-Auswertung, Aktivitätsmuster,
+> Nutzermodelle, Race-Auswertung). Gut geeignet als **Import** (ganz oder
+> teilweise, als Datenlieferant) — und, wenn dein Zweck wirklich aus dieser
+> Einheit herausdivergiert, als **Fork-Master**: forken, bewusst divergieren,
+> Fork in FORKS.md registrieren.
 
 [English version](README.md)
 

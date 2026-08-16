@@ -1,8 +1,11 @@
 # prompt-listener
 
-> **A fork-master template, not a shared dependency.** A versioned master
-> pattern for analysing human–AI interactions: fork it, diverge deliberately,
-> register your fork — the master stays clean, your fork lives its own life.
+> **A purpose-sharp functional unit — like a cell.** Its one purpose: collect
+> and evaluate prompts from agent sessions, and hand the data to any consumer
+> (workflow analysis, activity patterns, user models, race evaluation). Well
+> suited as an **import** (whole or partial, as a data supplier) — and, when
+> your purpose truly diverges out of this unit, as a **fork master**: fork,
+> diverge deliberately, register your fork in FORKS.md.
 
 [Deutsche Fassung](README_de.md)
 

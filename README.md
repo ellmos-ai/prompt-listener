@@ -57,6 +57,20 @@ and results privately and continues as the research working copy — fork #2 in
 the register). First registered fork: TOM-lm's `corpus_extract.py`
 (user-model building). Method paper: "Prompt-Archaeology" (research line).
 
+## Deliberate non-capabilities (the safety side of staying lean)
+
+This master is kept lean **on purpose** — limits are features:
+
+- Reads **recorded session logs only** (JSONL files handed to it, post-hoc).
+  It cannot and shall not read live activity, monitor sessions, or track users.
+- No network, no credentials for stages 0–1; classification (2–4) only via an
+  explicitly provided runner.
+- **Additions that would widen the abuse surface will not be merged into this
+  master.** If your import purpose needs such an additive, build it inside
+  *your* consuming module, or fork (FORKS.md) and adapt — in a fork, possibly a
+  private one, the sensitive capability stays isolated instead of becoming a
+  building block anyone can lift out of a public master.
+
 ## License
 
 MIT.

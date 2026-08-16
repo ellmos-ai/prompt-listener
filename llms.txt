@@ -28,7 +28,10 @@ stays identical.
 TOM-lm corpus_extract.py (user-model building) · AI-LAB research working copy
 (keeps private corpora/_results).
 
-## Boundaries
+## Boundaries -- deliberate non-capabilities
 
-Research data (_results/, _sources/) never enters this repo (gitignored).
-No network, no API key needed for stages 0-1.
+Reads RECORDED session logs only (post-hoc JSONL handed to it) -- shall not
+read live activity, monitor sessions or track users. No network, no API key
+for stages 0-1. Research data (_results/, _sources/) never enters this repo.
+POLICY: additions widening the abuse surface are not merged into this master
+-- build them in your consuming module or in a fork (isolation), see FORKS.md.

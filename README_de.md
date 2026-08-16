@@ -58,6 +58,21 @@ Ergebnisse privat behält und als Forschungs-Arbeitskopie weiterlebt — Fork #2
 im Register). Erster registrierter Fork: TOM-lms `corpus_extract.py`
 (Nutzermodell-Bau). Methoden-Paper: „Prompt-Archaeology" (research line).
 
+## Bewusste Nicht-Fähigkeiten (die Sicherheits-Seite der Schlankheit)
+
+Dieser Master ist **absichtlich** schlank — Grenzen sind Features:
+
+- Liest **nur aufgezeichnete Session-Logs** (JSONL-Dateien, die man ihm gibt,
+  post-hoc). Er kann und soll **keine Live-Aktivität auslesen**, keine Sessions
+  überwachen, keine Nutzer tracken.
+- Kein Netz, keine Zugangsdaten für Stufe 0–1; Klassifikation (2–4) nur über
+  einen ausdrücklich bereitgestellten Runner.
+- **Additive, die die Missbrauchsfläche erweitern würden, werden nicht in
+  diesen Master gemergt.** Braucht dein Import-Zweck so ein Additiv, baue es in
+  *deinem* Konsumenten-Modul — oder forke (FORKS.md) und passe an: Im Fork
+  (ggf. privat) bleibt die heikle Fähigkeit isoliert, statt zum Baustein zu
+  werden, den jeder aus einem öffentlichen Master herauslösen kann.
+
 ## Lizenz
 
 MIT.

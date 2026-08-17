@@ -1,3 +1,5 @@
+<img src="assets/banner.png" width="100%" alt="prompt-listener Banner">
+
 # prompt-listener
 
 > **Eine zweckscharfe Funktionseinheit — wie eine Zelle.** Ihr einer Zweck:

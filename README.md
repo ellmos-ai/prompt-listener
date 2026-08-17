@@ -1,3 +1,5 @@
+<img src="assets/banner.png" width="100%" alt="prompt-listener banner">
+
 # prompt-listener
 
 > **A purpose-sharp functional unit — like a cell.** Its one purpose: collect

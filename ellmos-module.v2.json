@@ -4,19 +4,40 @@
   "display_name": "prompt-listener",
   "category": "quality",
   "kind": "template",
+  "version": "1.0.1",
   "status": "active",
   "visibility": "public",
-  "provides": ["quality.prompt-analysis", "quality.agent-event-provenance"],
+  "provides": [
+    "quality.prompt-analysis",
+    "quality.agent-event-provenance"
+  ],
   "requires": [],
-  "optional": ["automation.default"],
+  "optional": [
+    "automation.default"
+  ],
   "conflicts": [],
-  "surfaces": ["library", "cli", "template"],
-  "state": { "ownership": "external", "location": "project" },
+  "surfaces": [
+    "library",
+    "cli",
+    "template"
+  ],
+  "state": {
+    "ownership": "external",
+    "location": "project"
+  },
   "boundaries": {
     "network": "none",
     "data": "user-local",
-    "platforms": ["windows", "macos", "linux"]
+    "platforms": [
+      "windows",
+      "macos",
+      "linux"
+    ]
   },
-  "source_of_truth": { "type": "local-directory", "path": "." },
+  "source_of_truth": {
+    "type": "git-repository",
+    "path": ".",
+    "repository": "https://github.com/ellmos-ai/prompt-listener"
+  },
   "adapters": []
 }

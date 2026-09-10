@@ -33,9 +33,19 @@ import re
 import argparse
 from datetime import datetime
 from pathlib import Path
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, asdict
 from collections import Counter, defaultdict
-from typing import Optional
+
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+if hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 
 from stage0_agent_event import (
     extract_agent_events_from_jsonl,
@@ -438,7 +448,7 @@ def write_stufe4(stats: dict, path: Path):
         name = PROMPT_TYPES.get(code, code)
         lines.append(f"| {code} ({name}) | {val} |\n")
     lines.extend([
-        f"\n## Mensch-Maschine-Dynamik\n\n",
+        "\n## Mensch-Maschine-Dynamik\n\n",
         f"- **B:K-Verhältnis:** {stats['bk_ratio']}:1",
         f" {'(kaum Zustimmungs-Bias)' if stats['bk_ratio'] < 2 else '(möglicher Zustimmungs-Bias)'}\n",
         f"- **Proaktiv:Reaktiv:** {stats['proactive_reactive_ratio']}:1",
@@ -447,13 +457,13 @@ def write_stufe4(stats: dict, path: Path):
         f"- **Wendepunkt-Typen:** {stats['turning_point_types']}\n",
         f"- **Median Wortanzahl (alle):** {stats['median_word_count']}\n",
         f"- **Median Wortanzahl (Wendepunkte):** {stats['median_tp_word_count']}\n\n",
-        f"## Top-10 Themen nach Prompt-Anzahl\n\n",
+        "## Top-10 Themen nach Prompt-Anzahl\n\n",
         "| Thema | Prompts |\n|-------|--------|\n",
     ])
     for topic, count in stats["topics_by_size"].items():
         lines.append(f"| {topic} | {count} |\n")
     lines.extend([
-        f"\n## Höchste Korrekturrate nach Thema\n\n",
+        "\n## Höchste Korrekturrate nach Thema\n\n",
         "| Thema | Korrekturrate |\n|-------|---------------|\n",
     ])
     for topic, rate in stats["topics_highest_correction_rate"].items():

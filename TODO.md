@@ -4,12 +4,12 @@
 
 | Category | Status |
 |---|---|
-| Tests | 19 passed (14 Werkzeug-Kern/Schema/Fixtures + 5 Pipeline/CLI; Forschungs-Gate-Tests bleiben im Lab) |
+| Tests | 25 passed (14 Werkzeug-Kern/Schema/Fixtures + 5 Pipeline/CLI + 6 Metadaten/Contract-Tests; Forschungs-Gate-Tests bleiben im Lab) |
 | Sprachstufe (P-006) | Core: README & SECURITY DE+EN; Code/CLI englischsprachige Struktur, deutsche Pipeline-Ausgaben (Forschungssprache — bewusst) |
 | Rolle | Fork-Master-Template: Forks divergieren frei, Pflicht ist nur der FORKS.md-Eintrag |
 | Bewusste Entscheidung | Keine Rückkonsolidierung von Forks (User 2026-08-16); Forschungsdaten bleiben im Lab |
 
-Stand: 2026-09-10 · Version 1.0.1
+Stand: 2026-09-14 · Version 1.0.2
 
 ## Offen
 

@@ -1,0 +1,77 @@
+# MARKETING-LOG — prompt-listener
+
+Dokumentation von Sichtbarkeit, Positionierung, Zielgruppen, Metadaten und Discoverability-Initiativen (Pfad B).
+
+---
+
+## 2026-09-14 — Release 1.0.2: Discoverability, Visual Architecture, Bilingual Parity & Contract Tests
+
+- **Veranlassung:** Turnusgemäßer Pfad-B-Lauf (`[GITHUBBOT_ONE_REPO_MARKETING_AND_DESIGN]`).
+- **Wahlkriterium:** Laut `_tools/repo_radar.py candidates --path b` berechtigter Top-Kandidat der Flotte (Ruhezustand 98.1h > 24h Cooldown, voriger Status: `last_b: NEVER`, `last_a: NEVER`), 100% sauberer Arbeitsbaum auf Branch `master`, 0 aktive Locks im kanonischen Lock-System (`lock_status.py`: UNLOCKED).
+
+### Umgesetzte Maßnahmen
+
+1. **Shields.io Badges in zweisprachiger README-Architektur (`README.md` & `README_de.md`):**
+   - Python Version Badge (`Python-3.10+-blue.svg`)
+   - Lizenz Badge (`License-MIT-green.svg` / `Lizenz-MIT-green.svg`)
+   - Test-Status Badge (`tests-passed | 100% green`)
+   - Zero-Network-Egress Badge (`Network-Zero Egress (Default)-success.svg`)
+   - Schema Badge (`Schema-AgentEvent v2-orange.svg`)
+   - Architektur Badge (`Architecture-Cell | Fork-Master-purple.svg`)
+
+2. **12-Punkte Zweisprachige Schnellnavigation (100% Anker-Parität):**
+   - Wechselseitig identische Struktur zwischen `README.md` und `README_de.md`:
+     - `#what-it-is` <-> `#was-es-ist`
+     - `#architecture--pipeline-stages` <-> `#architektur--pipeline-stufen`
+     - `#execution-flow` <-> `#ablauf-sequenz`
+     - `#the-template--cell-model` <-> `#das-template---zell-modell`
+     - `#target-personas--discoverability` <-> `#zielgruppen--auffindbarkeit`
+     - `#comparative-matrix-vs-alternatives` <-> `#vergleichsmatrix-gegenüber-alternativen`
+     - `#quick-start` <-> `#schnellstart`
+     - `#output-artifacts` <-> `#ausgabe-artefakte`
+     - `#provenance` <-> `#provenienz`
+     - `#deliberate-non-capabilities` <-> `#bewusste-nicht-fähigkeiten`
+     - `#governance--runtime-invariants` <-> `#governance---laufzeit-invarianten`
+     - `#license--security` <-> `#lizenz--sicherheit`
+
+3. **Visuelle Systemarchitektur & Ablauf-Sequenz (Mermaid Diagrams mit Hook-Guardrails):**
+   - **Flowchart (`flowchart TD`):** Veranschaulichung der Ingestion (Session Log JSONL), Stufe 0 (Roh-Extraktion & AgentEvent v2 Mapper), Stufe 1 (Themen-/Regex-Filter), optionaler Klassifikationsstufe 2 (LLM Neighbor Runner), Stufe 3 (Aggregation) und Stufe 4 (Statistik).
+   - **Sequenzdiagramm (`sequenceDiagram` mit `autonumber`):** Post-Hoc-Ablauf zwischen Forscher/CLI, Stufe-0-Parser, AgentEvent-Ledger, Themenfilter und Artefakt-Dateisystem.
+   - **Mermaid-Syntaxschutz (`HOOK-BANNER-ASSET-01`):** Alle Kantenbeschriftungen und Rechteck-Knoten mit Klammern strikt quotiert; keine Semikolons in Sequenznachrichten; `lint_mermaid.py` verifiziert mit 0 Fehlern.
+
+4. **Zielgruppen-Definition (Target Personas) & High-Intent SEO Queries:**
+   - `[PERSONA-01] AI Interaction & Prompt Researchers / KI-Interaktions- & Prompt-Forscher`
+   - `[PERSONA-02] Autonomous Agent & Swarm Engineers / Autonome Agenten- & Schwarm-Entwickler`
+   - `[PERSONA-03] Security, Compliance & Governance Auditors / Sicherheits-, Compliance- & Governance-Auditoren`
+   - `[PERSONA-04] Local-First & Privacy-Conscious Tool Builders / Local-First & Datenschutz-fokussierte Tool-Entwickler`
+   - SEO-Keywords zweisprachig verankert (Prompt analysis pipeline, AgentEvent provenance schema, prompt archaeology, post-hoc session audit, zero-egress prompt analyzer).
+
+5. **10-Dimensionen-Vergleichsmatrix gegenüber 4 Alternativen:**
+   - Gegenüberstellung mit (1) Live Telemetry Daemons, (2) Heavy Cloud Tracing Platforms (Langfuse/Phoenix), (3) Ad-hoc Grep/Bash Scripts, (4) Generic OpenTelemetry Logs.
+   - 10 technische Dimensionen gemapped auf Invarianten `INV-LOCAL-01` bis `INV-SLA-10`.
+
+6. **Third-Party Lizenz- & Invarianten-Audit (`THIRD_PARTY_LICENSES.md`):**
+   - Vollständiges SPDX-Inventar: Python Standard Library (PSF-2.0), optional `anthropic` (MIT), `pytest` (MIT), `ruff` (MIT/Apache-2.0).
+   - Zero-Copyleft-Garantie und unprivilegierter User-Modus (`RunAsInvoker`).
+   - Bestätigung aller 10 Governance- & Laufzeit-Invarianten.
+
+7. **Standardisierung & Manifest-Harmonisierung:**
+   - `pyproject.toml` um PEP 621 URLs (`Repository`, `Documentation`, `Bug Tracker`, `Security`, `Marketing Log`, `Third-Party Licenses`) und `[tool.pytest.ini_options]` `addopts = "-ra -v"` erweitert.
+   - Version auf `1.0.2` in `pyproject.toml`, `ellmos-module.v2.json`, `llms.txt`, `TODO.md` und `CHANGELOG.md` harmonisiert.
+   - `llms.txt` mit frischem Zeitstempel (2026-09-14), Pipeline-Stufen, Personas und Invarianten synchronisiert.
+
+8. **Automatisierte Vertragstests (`tests/test_metadata.py`):**
+   - 6 neue Contract-Tests für 12-Punkte-Navigation, zweisprachige Parität, Personas, 10-Dimensionen-Vergleichsmatrix, Lizenz-Inventar, Pyproject-URLs und Versions-Konsistenz implementiert.
+   - Gesamtsuite 25/25 Tests 100% grün.
+
+---
+
+## Externe Empfehlungen (GitHub Topics & Ecosystem)
+
+1. **GitHub Topics:**
+   Unter `ellmos-ai/prompt-listener` -> "About" folgende Topics hinterlegen:
+   `prompt-engineering`, `prompt-analysis`, `agent-event`, `provenance`, `ai-research`, `session-logs`, `local-first`, `zero-egress`, `python`, `fork-master`
+
+2. **Ökosystem-Verlinkung:**
+   - In `ellmos-ai/.github` (Organisations-Profil) als Referenz-Muster für Post-Hoc-Promptanalyse und Provenienz-Tracking verlinken.
+   - In Forschungsprojekten (`research-line` und AI-LAB) als kanonisches Open-Source-Template für Prompt-Archäologie referenzieren.

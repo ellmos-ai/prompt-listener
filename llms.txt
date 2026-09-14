@@ -1,37 +1,49 @@
 # prompt-listener
 
-> Versioned fork-master template: 5-stage prompt/session analysis + AgentEvent
-> v2 provenance schema.
-> Last-checked: 2026-08-16 | Version: 1.0.0 | Tests: 14 passed
+> Versioned fork-master template: 5-stage prompt/session analysis pipeline + AgentEvent v2 provenance schema for human-AI interaction research.
+> Last-checked: 2026-09-14 | Version: 1.0.2 | Tests: 25 passed | 100% green
 
-## Core idea
+## Core Idea & Cell Model
 
-A FORK-MASTER, not a shared dependency: fork the logic when your purpose
-diverges, register the fork in FORKS.md (declared divergence beats silent
-copies), the master stays versioned and tested. Import only when the purpose
-stays identical.
+A FORK-MASTER, not a shared dependency: fork the logic when your purpose diverges, register the fork in FORKS.md (declared divergence beats silent copies), while the master stays versioned and tested. Import as a functional cell when the purpose stays identical.
 
-## Components
+## Components & Pipeline Stages
 
-- prompt_analyzer.py: JSONL session logs -> extraction -> topic filter -> LLM
-  classification (type/topic/purpose/intent/method) -> aggregation ->
-  statistics. Stages 0-1 dependency-free (--dry-run); stages 2-4 use an LLM
-  runner as an optional, detected neighbour.
-- schema/agent_event_v2.py (+ JSON Schema): stdlib-only provenance ledger --
-  AgentEvent core + 18 sub-ledgers (source, authority, trust boundary,
-  tool/MCP context, memory influence, planned vs executed action, gate
-  decision, review status).
-- fixture_corpus.py + tests/ (14 tests, synthetic fixtures only).
+- `prompt_analyzer.py`: 5-stage session pipeline over JSONL logs:
+  - Stage 0: Raw extraction (`prompt-protocol.md`, optional `events.jsonl`).
+  - Stage 1: Topic and keyword filtering (`filtered-prompt-protocol.md`).
+  - Stage 2: LLM classification (type codes `SP`, `NT`, `NM`, `NS`, `KO`, `BE`, `RA`, `MP`, turning points `is_turning_point`, intent).
+  - Stage 3: Per-unit aggregation (`aggregated-prompt-protocol.md`).
+  - Stage 4: Statistical evaluation and metrics (`statistical-prompt-aggregation.md`).
+  Stages 0–1 run completely offline with standard library only (`--dry-run`); stages 2–4 use an optional detected LLM runner.
+- `stage0_agent_event.py`: Deterministic mapper from JSONL logs to `AgentEvent v2` records.
+- `schema/agent_event_v2.py`: Stdlib-only provenance ledger (AgentEvent core + 18 sub-ledgers: source, authority, trust boundary, tool/MCP context, memory influence, planned vs executed action, gate decision, review status) with JSON Schema.
 
-## Known forks (see FORKS.md)
+## Target Personas
 
-TOM-lm corpus_extract.py (user-model building) · AI-LAB research working copy
-(keeps private corpora/_results).
+- `[PERSONA-01]` AI Interaction & Prompt Researchers: Prompt archaeology, turning points, intervention analysis.
+- `[PERSONA-02]` Autonomous Agent & Swarm Engineers: Deterministic provenance tracking (`AgentEvent v2`).
+- `[PERSONA-03]` Security, Compliance & Governance Auditors: Post-hoc session audits with 0 telemetry daemons and zero network egress.
+- `[PERSONA-04]` Local-First Tool Builders: Stdlib-only extraction unit with isolated capabilities.
 
-## Boundaries -- deliberate non-capabilities
+## Governance & Runtime Invariants
 
-Reads RECORDED session logs only (post-hoc JSONL handed to it) -- shall not
-read live activity, monitor sessions or track users. No network, no API key
-for stages 0-1. Research data (_results/, _sources/) never enters this repo.
-POLICY: additions widening the abuse surface are not merged into this master
--- build them in your consuming module or in a fork (isolation), see FORKS.md.
+- `INV-LOCAL-01`: 100% Local-First & Zero Egress by default.
+- `INV-POSTHOC-02`: Post-hoc static log processing only (no live hooks or keystroke logging).
+- `INV-DEPEND-03`: Python standard library only for core Stages 0–1 and schema.
+- `INV-SCHEMA-04`: Structured `AgentEvent v2` ledger with 18 sub-ledgers.
+- `INV-PIPELINE-05`: 5 distinct operational stages (Raw -> Filter -> Classify -> Aggregate -> Stats).
+- `INV-TEMPLATE-06`: Fork-master & cell model with declared divergence in `FORKS.md`.
+- `INV-PRIVACY-07`: Sensitive capability isolation.
+- `INV-METRICS-08`: Domain-specific prompt archaeology & turning point metrics.
+- `INV-FORMAT-09`: Dual output formats (Markdown protocols + JSONL event stream).
+- `INV-SLA-10`: Explicit security policy and 48h SLA (`SECURITY.md`).
+
+## Known Forks (FORKS.md)
+
+1. TOM-lm `corpus_extract.py`: User model construction.
+2. AI-LAB research working copy: Research corpora and experiments.
+
+## Boundaries — Deliberate Non-Capabilities
+
+Reads RECORDED session logs only (post-hoc JSONL) — shall not read live activity, monitor sessions or track users. Zero network egress and zero credentials for Stages 0–1. Sensitive extensions widening abuse surfaces belong in forks, never in the public master.

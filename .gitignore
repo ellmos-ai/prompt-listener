@@ -7,6 +7,8 @@ venv/
 .ruff_cache/
 .env
 *.db
+*.db-wal
+*.db-shm
 .idea/
 .vscode/
 data/
@@ -15,3 +17,34 @@ _results/
 _sources/
 out/
 *.pyc
+
+# Multi-host sync conflict copies
+*conflicted copy*
+* (Kopie)*
+* (Copy)*
+*-ASUS*
+*-ASUS-GEI*
+*-LAPTOP*
+*-WORKSTATION*
+*-WORKSTATION-LG*
+*-Mac Studio*
+*-MacBook*
+
+# Systemwide lock coordination & permissions
+LOCK
+LOCK.*
+LOCK*.txt
+LOCK.permissions.json
+LOCK.user.*
+LOCK.until.*
+LOCK.condition.*
+
+# Package & build artifacts
+uv.lock
+!package-lock.json
+.hypothesis/
+.turbo/
+.nyc_output/
+*.orig
+*.rej
+.coverage*

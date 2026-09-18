@@ -1,24 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "prompt-listener"
-version = "1.0.2"
+version = "1.0.3"
 description = "Versioned fork-master template: 5-stage prompt/session analysis pipeline plus AgentEvent v2 provenance schema for human-AI interaction research"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
+license-files = ["LICENSE", "THIRD_PARTY_LICENSES.md"]
 authors = [{ name = "Lukas Geiger" }]
+keywords = [
+    "prompt-engineering",
+    "prompt-analysis",
+    "agent-event",
+    "provenance",
+    "ai-research",
+    "session-logs",
+    "local-first",
+    "zero-egress",
+    "fork-master"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Quality Assurance"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0"
+]
 
 [project.urls]
-Repository = "https://github.com/ellmos-ai/prompt-listener"
+Homepage = "https://github.com/ellmos-ai/prompt-listener"
 Documentation = "https://github.com/ellmos-ai/prompt-listener#readme"
+Repository = "https://github.com/ellmos-ai/prompt-listener"
+Issues = "https://github.com/ellmos-ai/prompt-listener/issues"
 "Bug Tracker" = "https://github.com/ellmos-ai/prompt-listener/issues"
+Changelog = "https://github.com/ellmos-ai/prompt-listener/blob/master/CHANGELOG.md"
 Security = "https://github.com/ellmos-ai/prompt-listener/blob/master/SECURITY.md"
-"Marketing Log" = "https://github.com/ellmos-ai/prompt-listener/blob/master/MARKETING-LOG.txt"
 "Third-Party Licenses" = "https://github.com/ellmos-ai/prompt-listener/blob/master/THIRD_PARTY_LICENSES.md"
+"Parent Organization" = "https://github.com/ellmos-ai"
+"Umbrella Ecosystem" = "https://github.com/open-bricks"
+"Marketing Log" = "https://github.com/ellmos-ai/prompt-listener/blob/master/MARKETING-LOG.txt"
+"LLM Ready" = "https://github.com/ellmos-ai/prompt-listener/blob/master/llms.txt"
 
 [tool.pytest.ini_options]
+minversion = "7.0"
 pythonpath = ["."]
 testpaths = ["tests"]
 addopts = "-ra -v"
+norecursedirs = [".git", ".pytest_cache", "__pycache__", ".ruff_cache", "_results", "_sources", "out", "data"]
 
 [tool.ruff]
 line-length = 120

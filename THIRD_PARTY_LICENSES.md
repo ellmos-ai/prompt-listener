@@ -1,9 +1,9 @@
 # Third-Party Licenses & Runtime Invariants
 
-**Repository:** `ellmos-ai/prompt-listener`  
-**Stand:** 2026-09-14  
-**Version:** 1.0.2  
-**SPDX-License-Identifier:** MIT  
+**Repository:** `ellmos-ai/prompt-listener`
+**Stand:** 2026-09-18
+**Version:** 1.0.3
+**SPDX-License-Identifier:** MIT
 
 ---
 

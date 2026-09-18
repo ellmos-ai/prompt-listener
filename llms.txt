@@ -1,7 +1,7 @@
 # prompt-listener
 
 > Versioned fork-master template: 5-stage prompt/session analysis pipeline + AgentEvent v2 provenance schema for human-AI interaction research.
-> Last-checked: 2026-09-14 | Version: 1.0.2 | Tests: 25 passed | 100% green
+> Last-checked: 2026-09-18 | Version: 1.0.3 | Tests: 31 passed | 100% green
 
 ## Core Idea & Cell Model
 

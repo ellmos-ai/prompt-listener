@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.3] - 2026-09-18
+
+- **CI-Matrix- & Workflow-Härtung (Pfad A):** Vollständige Bereitstellung von GitHub Actions Workflows (`.github/workflows/`): `ci.yml` mit Multi-OS-Matrix (`ubuntu-latest`, `windows-latest`) über Python 3.10, 3.11, 3.12 und 3.13, Least-Privilege `contents: read`, Concurrency `cancel-in-progress: true` und 15-Minuten-Timeout; `stale.yml` (actions/stale@v9, täglicher Cron um 01:30 UTC, 10m Timeout); `welcome.yml` (actions/first-interaction@v3, 5m Timeout).
+- **Multi-Host Cloud-Sync-, Lock- & Cache-Schutz:** `.gitignore` gehärtet gegen Multi-Host Konfliktdateien (`*conflicted copy*`, `*-ASUS*`, `*-ASUS-GEI*`, `*-WORKSTATION*`, `*-WORKSTATION-LG*`, `*-Mac Studio*`), systemweite Locks (`LOCK`, `LOCK.*`, `LOCK*.txt`, `LOCK.permissions.json`, `LOCK.user.*`, `LOCK.until.*`, `LOCK.condition.*`) und Build-/Tool-Caches (`uv.lock`, `.hypothesis/`, `.turbo/`, `.coverage*`).
+- **PEP 621 Standardisierung & Packaging:** `pyproject.toml` um `build-system` (`setuptools>=61.0`), `license-files = ["LICENSE", "THIRD_PARTY_LICENSES.md"]`, Keywords, Classifiers für Python 3.10-3.13, standardisierte Ecosystem-URLs (`Homepage`, `Documentation`, `Repository`, `Issues`, `Bug Tracker`, `Changelog`, `Security`, `Third-Party Licenses`, `Parent Organization`, `Umbrella Ecosystem`, `Marketing Log`, `LLM Ready`) sowie `[tool.pytest.ini_options]` (`minversion = "7.0"`, `norecursedirs`) erweitert.
+- **Rechtliche Absicherung (§ 521 BGB Gefälligkeitsrecht):** Gesetzlicher Haftungshinweis für unentgeltliche Bereitstellung in `README_de.md` und `README.md` verankert.
+- **Dritte-Partei-Audit & Invarianten:** Re-Audit in `THIRD_PARTY_LICENSES.md` per 2026-09-18 (0 externe Runtime-Dependencies, 100% Python stdlib PSF-2.0, Zero-Copyleft, RunAsInvoker, Affirmation von `INV-LOCAL-01` bis `INV-SLA-10`).
+- **Vertragstests & Metadaten-Härtung:** `tests/test_metadata.py` um automatisierte Contract-Tests erweitert (CI-Workflow Concurrency/Timeouts/Permissions, Gitignore-Muster, PEP 621 Metadaten/URLs/Pytest-Optionen, gesetzlicher Haftungshinweis gem. § 521 BGB und UTF-8-Integrität, Drittanbieter-Audit & SLA-Parität).
+- **Manifest-Synchronisation:** Synchrone Version `1.0.3` über alle Manifeste und Dokumente (`pyproject.toml`, `ellmos-module.v2.json`, `llms.txt`, `CHANGELOG.md`, `THIRD_PARTY_LICENSES.md`, `MARKETING-LOG.txt`).
+
 ## [1.0.2] - 2026-09-14
 
 - **Discoverability & Visual Architecture (Pfad B):** Zweisprachige Shields.io Badges (Python 3.10+, MIT, Tests 25 bestanden | 100% grün, Zero Network Egress, Schema AgentEvent v2, Architektur Zellmodell / Fork-Master).

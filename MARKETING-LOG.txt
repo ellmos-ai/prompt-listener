@@ -1,6 +1,44 @@
 # MARKETING-LOG — prompt-listener
 
-Dokumentation von Sichtbarkeit, Positionierung, Zielgruppen, Metadaten und Discoverability-Initiativen (Pfad B).
+Dokumentation von Sichtbarkeit, Positionierung, Zielgruppen, Metadaten und Discoverability-Initiativen (Pfad B) sowie technischer Hygiene & CI-Härtung (Pfad A).
+
+---
+
+## 2026-09-18 — Release 1.0.3: Pfad A (Hygiene) & CI-Matrix-Härtung
+
+- **Veranlassung:** Turnusgemäßer Pfad-A-Lauf (`[GITHUBBOT_ONE_REPO_CLEANER]`).
+- **Wahlkriterium:** Laut `_tools/repo_radar.py candidates --path a` unberührter Top-Kandidat der Flotte (Ruhezustand >100h > 24h Cooldown, voriger Status: `last_a: NEVER`), 100% sauberer Arbeitsbaum auf Branch `master`, 0 aktive Locks im kanonischen Lock-System (`lock_status.py`: UNLOCKED).
+
+### Umgesetzte Maßnahmen
+
+1. **GitHub Actions CI-Workflows (`.github/workflows/`):**
+   - `ci.yml`: Multi-OS-Matrix (`ubuntu-latest`, `windows-latest`) und Python-Matrix (`3.10`, `3.11`, `3.12`, `3.13`), Least-Privilege `contents: read`, Concurrency `cancel-in-progress: true`, `timeout-minutes: 15`. Schritte: `actions/checkout@v4`, `actions/setup-python@v5`, `compileall -q .`, `ruff check .`, `pytest -ra -v`.
+   - `stale.yml`: `actions/stale@v9`, täglicher Cron `30 1 * * *`, 10m Timeout, least-privilege `issues: write`, `pull-requests: write`.
+   - `welcome.yml`: `actions/first-interaction@v3`, 5m Timeout, least-privilege `issues: write`, `pull-requests: write`.
+
+2. **Multi-Host Cloud-Sync-, Lock- & Cache-Schutz (`.gitignore`):**
+   - Absicherung gegen Multi-Host Konfliktkopien (`*conflicted copy*`, `*-ASUS*`, `*-ASUS-GEI*`, `*-WORKSTATION*`, `*-WORKSTATION-LG*`, `*-Mac Studio*`).
+   - Universelle Lock-Dateien (`LOCK`, `LOCK.*`, `LOCK*.txt`, `LOCK.permissions.json`, `LOCK.user.*`, `LOCK.until.*`, `LOCK.condition.*`).
+   - Tool- und Test-Caches (`uv.lock`, `.hypothesis/`, `.turbo/`, `.coverage*`, `*.db-wal`, `*.db-shm`).
+
+3. **PEP 621 Standardisierung & Packaging (`pyproject.toml`):**
+   - `build-system` (`setuptools>=61.0`).
+   - `license-files = ["LICENSE", "THIRD_PARTY_LICENSES.md"]`.
+   - Keywords & Classifiers für Python 3.10–3.13.
+   - Standardisierte `project.urls` (`Homepage`, `Documentation`, `Repository`, `Issues`, `Bug Tracker`, `Changelog`, `Security`, `Third-Party Licenses`, `Parent Organization`, `Umbrella Ecosystem`, `Marketing Log`, `LLM Ready`).
+   - `[tool.pytest.ini_options]` gehärtet (`minversion = "7.0"`, `norecursedirs`).
+
+4. **Rechtliche Absicherung (§ 521 BGB Gefälligkeitsrecht):**
+   - Gesetzlicher Haftungshinweis für unentgeltliche Open-Source-Bereitstellung in `README_de.md` und `README.md` verankert.
+
+5. **Dritte-Partei-Audit & Invarianten (`THIRD_PARTY_LICENSES.md`):**
+   - Re-Audit Stand 2026-09-18, Bestätigung von 0 externen Runtime-Dependencies (100% Python stdlib PSF-2.0, Zero-Copyleft, RunAsInvoker, Affirmation von `INV-LOCAL-01` bis `INV-SLA-10`).
+
+6. **Vertragstest-Suite & Metadaten-Härtung (`tests/test_metadata.py`):**
+   - Automatisierte Contract-Tests für CI-Workflows, `.gitignore`-Muster, PEP 621 Metadaten, URLs, Pytest-Optionen, § 521 BGB Hinweis und SLA-Parität.
+
+7. **Manifest-Synchronisation:**
+   - Synchrone Version `1.0.3` in `pyproject.toml`, `ellmos-module.v2.json`, `llms.txt`, `CHANGELOG.md`, `THIRD_PARTY_LICENSES.md` und `MARKETING-LOG.txt`.
 
 ---
 

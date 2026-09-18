@@ -14,7 +14,7 @@
 
 [![Python-Version](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![Lizenz: MIT](https://img.shields.io/badge/Lizenz-MIT-yellow.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-25%20bestanden%20%7C%20100%25-brightgreen.svg)](tests/)
+[![Tests](https://img.shields.io/badge/tests-31%20bestanden%20%7C%20100%25-brightgreen.svg)](tests/)
 [![Netzwerk: Zero Egress](https://img.shields.io/badge/netzwerk-zero%20egress%20(standard)-success.svg)](SECURITY.md)
 [![Schema: AgentEvent v2](https://img.shields.io/badge/schema-AgentEvent%20v2-orange.svg)](schema/agent_event_v2.py)
 [![Architektur: Zellmodell | Fork-Master](https://img.shields.io/badge/architektur-zellmodell%20%7C%20fork--master-purple.svg)](FORKS.md)
@@ -245,3 +245,4 @@ Das Repository erzwingt 10 technische Invarianten, die durch automatisierte Vert
 
 - **Lizenz:** MIT-Lizenz. Siehe [`LICENSE`](LICENSE) für die Lizenzbestimmungen.
 - **Sicherheit:** Sicherheitslücken bitte diskret über [GitHub Security Advisories](https://github.com/ellmos-ai/prompt-listener/security/advisories) oder per E-Mail an `security@open-bricks.org` melden. Siehe [`SECURITY.md`](SECURITY.md) für Melderichtlinien.
+- **Gesetzlicher Hinweis (§ 521 BGB):** Die Bereitstellung dieser Open-Source-Software erfolgt unentgeltlich. Die Haftung des Autors ist gemäß § 521 BGB auf Vorsatz und grobe Fahrlässigkeit beschränkt.

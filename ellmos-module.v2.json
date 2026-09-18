@@ -4,7 +4,7 @@
   "display_name": "prompt-listener",
   "category": "quality",
   "kind": "template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "status": "active",
   "visibility": "public",
   "provides": [

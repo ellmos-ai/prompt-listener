@@ -13,7 +13,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-25%20passed%20%7C%20100%25-brightgreen.svg)](tests/)
+[![Tests](https://img.shields.io/badge/tests-31%20passed%20%7C%20100%25-brightgreen.svg)](tests/)
 [![Network: Zero Egress](https://img.shields.io/badge/network-zero%20egress%20(default)-success.svg)](SECURITY.md)
 [![Schema: AgentEvent v2](https://img.shields.io/badge/schema-AgentEvent%20v2-orange.svg)](schema/agent_event_v2.py)
 [![Architecture: Cell | Fork-Master](https://img.shields.io/badge/architecture-cell%20%7C%20fork--master-purple.svg)](FORKS.md)
@@ -244,3 +244,4 @@ The repository enforces 10 technical invariants verified by automated contract t
 
 - **License:** MIT License. See [`LICENSE`](LICENSE) for terms.
 - **Security:** Please report security vulnerabilities privately via [GitHub Security Advisories](https://github.com/ellmos-ai/prompt-listener/security/advisories) or `security@open-bricks.org`. See [`SECURITY.md`](SECURITY.md) for reporting guidelines.
+- **Statutory Notice (§ 521 BGB):** This open-source software is provided free of charge. Under German statutory law (§ 521 BGB), liability of the author is limited to intent and gross negligence.

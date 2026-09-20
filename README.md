@@ -1,4 +1,5 @@
 <img src="assets/banner.png" width="100%" alt="prompt-listener banner">
+<!-- alternate banner: assets/banner-b.svg (swap on occasion) -->
 
 # prompt-listener
 

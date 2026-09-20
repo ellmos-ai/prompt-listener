@@ -1,0 +1,1087 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 680" width="2400" height="680">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#080c18"/>
+    </linearGradient>
+
+    <radialGradient id="centerGlow" cx="50%" cy="52%" r="55%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.16"/>
+      <stop offset="60%" stop-color="#0369a1" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#070a12" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="leftGlow" cx="16%" cy="56%" r="35%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.14"/>
+      <stop offset="70%" stop-color="#083344" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#070a12" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="rightGlow" cx="84%" cy="56%" r="35%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.14"/>
+      <stop offset="70%" stop-color="#3b0764" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#070a12" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Floor Gradient -->
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1527"/>
+      <stop offset="25%" stop-color="#090e1c"/>
+      <stop offset="100%" stop-color="#03050a"/>
+    </linearGradient>
+
+    <!-- Switchboard Cabinet Wood -->
+    <linearGradient id="woodCabinet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a160b"/>
+      <stop offset="25%" stop-color="#3d2112"/>
+      <stop offset="50%" stop-color="#4a2817"/>
+      <stop offset="75%" stop-color="#3d2112"/>
+      <stop offset="100%" stop-color="#241309"/>
+    </linearGradient>
+
+    <linearGradient id="woodHeader" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#542e1a"/>
+      <stop offset="50%" stop-color="#3f2112"/>
+      <stop offset="100%" stop-color="#241309"/>
+    </linearGradient>
+
+    <linearGradient id="woodShelf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a311b"/>
+      <stop offset="40%" stop-color="#3b1f10"/>
+      <stop offset="100%" stop-color="#1f1008"/>
+    </linearGradient>
+
+    <!-- Brass Trim & Rivets -->
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="30%" stop-color="#d97706"/>
+      <stop offset="70%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="brassJack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <!-- Tin Can Metallic Gradients -->
+    <linearGradient id="tinCanBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="20%" stop-color="#cbd5e1"/>
+      <stop offset="45%" stop-color="#f8fafc"/>
+      <stop offset="75%" stop-color="#94a3b8"/>
+      <stop offset="95%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+
+    <radialGradient id="tinCanCap" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="60%" stop-color="#cbd5e1"/>
+      <stop offset="85%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </radialGradient>
+
+    <linearGradient id="tinCanInside" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Living Ear Character Gradients -->
+    <linearGradient id="earSkin" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#ffe0ec"/>
+      <stop offset="35%" stop-color="#ffb3d1"/>
+      <stop offset="70%" stop-color="#ff8fbf"/>
+      <stop offset="100%" stop-color="#f06ca6"/>
+    </linearGradient>
+
+    <linearGradient id="earConcha" x1="20%" y1="20%" x2="80%" y2="80%">
+      <stop offset="0%" stop-color="#f06ca6"/>
+      <stop offset="60%" stop-color="#f06ca6"/>
+      <stop offset="100%" stop-color="#ff8fbf"/>
+    </linearGradient>
+
+    <linearGradient id="earHighlight" x1="30%" y1="15%" x2="70%" y2="85%">
+      <stop offset="0%" stop-color="#ffe0ec" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffe0ec" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffb3d1" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Monitor / Console Gradients -->
+    <linearGradient id="caseDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="40%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="crtGlassCyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e"/>
+      <stop offset="40%" stop-color="#083344"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <linearGradient id="crtGlassGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="40%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <linearGradient id="crtGlassPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2e1065"/>
+      <stop offset="40%" stop-color="#3b0764"/>
+      <stop offset="100%" stop-color="#090514"/>
+    </linearGradient>
+
+    <!-- Sneaker Gradients -->
+    <linearGradient id="sneakerCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <!-- Cord Colors -->
+    <linearGradient id="cordRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="50%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+
+    <linearGradient id="cordYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+
+    <linearGradient id="cordCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+
+    <linearGradient id="cordPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d8b4fe"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6b21a8"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="glowCyan" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowAmber" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowGreen" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Reusable Jack Socket -->
+    <g id="jackSocket">
+      <circle cx="0" cy="0" r="11" fill="url(#brassJack)" stroke="#78350f" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="7.5" fill="#18181b" stroke="#000000" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="3.5" fill="#000000"/>
+      <circle cx="1" cy="-1" r="1" fill="#fde047" opacity="0.6"/>
+    </g>
+
+    <!-- Reusable Jewel Lamp Off -->
+    <circle id="lampOff" cx="0" cy="0" r="4.5" fill="#27272a" stroke="#52525b" stroke-width="1"/>
+    <!-- Reusable Jewel Lamp Green -->
+    <g id="lampGreen">
+      <circle cx="0" cy="0" r="5" fill="#22c55e" filter="url(#glowGreen)"/>
+      <circle cx="-1.5" cy="-1.5" r="1.5" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Reusable Jewel Lamp Amber -->
+    <g id="lampAmber">
+      <circle cx="0" cy="0" r="5" fill="#f59e0b" filter="url(#glowAmber)"/>
+      <circle cx="-1.5" cy="-1.5" r="1.5" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Reusable Jewel Lamp Red -->
+    <g id="lampRed">
+      <circle cx="0" cy="0" r="5" fill="#ef4444" filter="url(#glowAmber)"/>
+      <circle cx="-1.5" cy="-1.5" r="1.5" fill="#ffffff" opacity="0.8"/>
+    </g>
+  </defs>
+
+  <!-- ==================== LAYER 1: BACKGROUND & AMBIENT ==================== -->
+  <rect width="2400" height="680" fill="url(#bgGrad)"/>
+  <rect width="2400" height="680" fill="url(#centerGlow)"/>
+  <rect width="2400" height="680" fill="url(#leftGlow)"/>
+  <rect width="2400" height="680" fill="url(#rightGlow)"/>
+
+  <!-- Subtle grid background lines -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="120" x2="2400" y2="120"/>
+    <line x1="0" y1="240" x2="2400" y2="240"/>
+    <line x1="0" y1="360" x2="2400" y2="360"/>
+    <line x1="0" y1="480" x2="2400" y2="480"/>
+    <line x1="300" y1="0" x2="300" y2="560"/>
+    <line x1="600" y1="0" x2="600" y2="560"/>
+    <line x1="900" y1="0" x2="900" y2="560"/>
+    <line x1="1200" y1="0" x2="1200" y2="560"/>
+    <line x1="1500" y1="0" x2="1500" y2="560"/>
+    <line x1="1800" y1="0" x2="1800" y2="560"/>
+    <line x1="2100" y1="0" x2="2100" y2="560"/>
+  </g>
+
+  <!-- ==================== LAYER 2: FLOOR & PERSPECTIVE ==================== -->
+  <polygon points="0,560 2400,560 2400,680 0,680" fill="url(#floorGrad)"/>
+  <!-- Horizon Line -->
+  <line x1="0" y1="560" x2="2400" y2="560" stroke="#1e293b" stroke-width="2.5"/>
+  <line x1="0" y1="561" x2="2400" y2="561" stroke="#0284c7" stroke-width="1" opacity="0.3"/>
+
+  <!-- Perspective Floor Stripes -->
+  <g opacity="0.15" stroke="#38bdf8" stroke-width="1.5">
+    <line x1="1200" y1="560" x2="0" y2="680"/>
+    <line x1="1200" y1="560" x2="320" y2="680"/>
+    <line x1="1200" y1="560" x2="680" y2="680"/>
+    <line x1="1200" y1="560" x2="980" y2="680"/>
+    <line x1="1200" y1="560" x2="1420" y2="680"/>
+    <line x1="1200" y1="560" x2="1720" y2="680"/>
+    <line x1="1200" y1="560" x2="2080" y2="680"/>
+    <line x1="1200" y1="560" x2="2400" y2="680"/>
+    <!-- Transverse Floor Lines -->
+    <line x1="0" y1="590" x2="2400" y2="590" stroke-width="1" opacity="0.5"/>
+    <line x1="0" y1="630" x2="2400" y2="630" stroke-width="1.2" opacity="0.7"/>
+  </g>
+
+  <!-- ==================== LAYER 3: VINTAGE SWITCHBOARD ==================== -->
+  <!-- Switchboard Cast Shadow -->
+  <rect x="710" y="545" width="980" height="25" rx="10" fill="#000000" opacity="0.75" filter="url(#dropShadow)"/>
+
+  <!-- Outer Wood Cabinet -->
+  <rect x="720" y="130" width="960" height="425" rx="16" fill="url(#woodCabinet)" stroke="#1a0c05" stroke-width="6" filter="url(#dropShadow)"/>
+
+  <!-- Top Wood Pediment / Moulding -->
+  <rect x="705" y="118" width="990" height="22" rx="5" fill="url(#woodHeader)" stroke="#1a0c05" stroke-width="2"/>
+  <line x1="710" y1="128" x2="1690" y2="128" stroke="#fde047" stroke-width="1" opacity="0.25"/>
+
+  <!-- Brass Corner Brackets -->
+  <!-- Top-Left Bracket -->
+  <path d="M 724 134 L 775 134 L 775 146 L 736 146 L 736 185 L 724 185 Z" fill="url(#brassGrad)" stroke="#78350f" stroke-width="1"/>
+  <circle cx="730" cy="140" r="2.5" fill="#451a03"/>
+  <circle cx="760" cy="140" r="2.5" fill="#451a03"/>
+  <circle cx="730" cy="170" r="2.5" fill="#451a03"/>
+
+  <!-- Top-Right Bracket -->
+  <path d="M 1676 134 L 1625 134 L 1625 146 L 1664 146 L 1664 185 L 1676 185 Z" fill="url(#brassGrad)" stroke="#78350f" stroke-width="1"/>
+  <circle cx="1670" cy="140" r="2.5" fill="#451a03"/>
+  <circle cx="1640" cy="140" r="2.5" fill="#451a03"/>
+  <circle cx="1670" cy="170" r="2.5" fill="#451a03"/>
+
+  <!-- Main Inset Bakelite Jack Panel Frame -->
+  <rect x="748" y="148" width="904" height="294" rx="8" fill="#111827" stroke="#1f2937" stroke-width="3"/>
+  <rect x="752" y="152" width="896" height="286" rx="6" fill="#090d16" stroke="#451a03" stroke-width="2"/>
+
+  <!-- 3 Switchboard Bays (Ingest / Matrix / Distribution) -->
+  <!-- Bay 1 (Left: Ingest) -->
+  <rect x="760" y="160" width="260" height="270" rx="4" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <!-- Bay 2 (Center: Matrix) -->
+  <rect x="1035" y="160" width="330" height="270" rx="4" fill="#0b1120" stroke="#1e293b" stroke-width="1.5"/>
+  <!-- Bay 3 (Right: Distribution) -->
+  <rect x="1380" y="160" width="260" height="270" rx="4" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Bay Dividers (Vertical Brass Moldings) -->
+  <line x1="1027" y1="155" x2="1027" y2="435" stroke="url(#brassGrad)" stroke-width="4"/>
+  <line x1="1372" y1="155" x2="1372" y2="435" stroke="url(#brassGrad)" stroke-width="4"/>
+
+  <!-- Upper Analog Gauges (Galvanometers) -->
+  <!-- Gauge in Bay 1 -->
+  <g transform="translate(890, 200)">
+    <circle cx="0" cy="0" r="28" fill="url(#brassGrad)" stroke="#78350f" stroke-width="2"/>
+    <circle cx="0" cy="0" r="23" fill="#fef3c7" stroke="#1e293b" stroke-width="1"/>
+    <path d="M -16 6 A 18 18 0 0 1 16 6" fill="none" stroke="#451a03" stroke-width="2"/>
+    <line x1="0" y1="10" x2="8" y2="-12" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="10" r="4" fill="#1e293b"/>
+  </g>
+
+  <!-- Gauge in Bay 2 (Center left) -->
+  <g transform="translate(1125, 195)">
+    <circle cx="0" cy="0" r="26" fill="url(#brassGrad)" stroke="#78350f" stroke-width="2"/>
+    <circle cx="0" cy="0" r="21" fill="#fef3c7" stroke="#1e293b" stroke-width="1"/>
+    <path d="M -14 5 A 16 16 0 0 1 14 5" fill="none" stroke="#451a03" stroke-width="1.5"/>
+    <line x1="0" y1="8" x2="-6" y2="-11" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="8" r="3.5" fill="#1e293b"/>
+  </g>
+
+  <!-- Gauge in Bay 2 (Center right) -->
+  <g transform="translate(1275, 195)">
+    <circle cx="0" cy="0" r="26" fill="url(#brassGrad)" stroke="#78350f" stroke-width="2"/>
+    <circle cx="0" cy="0" r="21" fill="#fef3c7" stroke="#1e293b" stroke-width="1"/>
+    <path d="M -14 5 A 16 16 0 0 1 14 5" fill="none" stroke="#451a03" stroke-width="1.5"/>
+    <line x1="0" y1="8" x2="10" y2="-8" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="8" r="3.5" fill="#1e293b"/>
+  </g>
+
+  <!-- Gauge in Bay 3 -->
+  <g transform="translate(1510, 200)">
+    <circle cx="0" cy="0" r="28" fill="url(#brassGrad)" stroke="#78350f" stroke-width="2"/>
+    <circle cx="0" cy="0" r="23" fill="#fef3c7" stroke="#1e293b" stroke-width="1"/>
+    <path d="M -16 6 A 18 18 0 0 1 16 6" fill="none" stroke="#451a03" stroke-width="2"/>
+    <line x1="0" y1="10" x2="12" y2="-7" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="10" r="4" fill="#1e293b"/>
+  </g>
+
+  <!-- JACKFIELD MATRICES -->
+  <!-- Bay 1 Jack Field -->
+  <g>
+    <!-- Row 1 (y=250) -->
+    <use href="#lampGreen" x="795" y="235"/><use href="#jackSocket" x="795" y="250"/>
+    <use href="#lampAmber" x="835" y="235"/><use href="#jackSocket" x="835" y="250"/>
+    <use href="#lampOff" x="875" y="235"/><use href="#jackSocket" x="875" y="250"/>
+    <use href="#lampGreen" x="915" y="235"/><use href="#jackSocket" x="915" y="250"/>
+    <use href="#lampOff" x="955" y="235"/><use href="#jackSocket" x="955" y="250"/>
+    <use href="#lampRed" x="995" y="235"/><use href="#jackSocket" x="995" y="250"/>
+
+    <!-- Row 2 (y=295) -->
+    <use href="#lampOff" x="795" y="280"/><use href="#jackSocket" x="795" y="295"/>
+    <use href="#lampGreen" x="835" y="280"/><use href="#jackSocket" x="835" y="295"/>
+    <use href="#lampAmber" x="875" y="280"/><use href="#jackSocket" x="875" y="295"/>
+    <use href="#lampOff" x="915" y="280"/><use href="#jackSocket" x="915" y="295"/>
+    <use href="#lampGreen" x="955" y="280"/><use href="#jackSocket" x="955" y="295"/>
+    <use href="#lampOff" x="995" y="280"/><use href="#jackSocket" x="995" y="295"/>
+
+    <!-- Row 3 (y=340) -->
+    <use href="#lampGreen" x="795" y="325"/><use href="#jackSocket" x="795" y="340"/>
+    <use href="#lampOff" x="835" y="325"/><use href="#jackSocket" x="835" y="340"/>
+    <use href="#lampRed" x="875" y="325"/><use href="#jackSocket" x="875" y="340"/>
+    <use href="#lampAmber" x="915" y="325"/><use href="#jackSocket" x="915" y="340"/>
+    <use href="#lampOff" x="955" y="325"/><use href="#jackSocket" x="955" y="340"/>
+    <use href="#lampGreen" x="995" y="325"/><use href="#jackSocket" x="995" y="340"/>
+
+    <!-- Row 4 (y=385) -->
+    <use href="#lampAmber" x="795" y="370"/><use href="#jackSocket" x="795" y="385"/>
+    <use href="#lampGreen" x="835" y="370"/><use href="#jackSocket" x="835" y="385"/>
+    <use href="#lampOff" x="875" y="370"/><use href="#jackSocket" x="875" y="385"/>
+    <use href="#lampGreen" x="915" y="370"/><use href="#jackSocket" x="915" y="385"/>
+    <use href="#lampOff" x="955" y="370"/><use href="#jackSocket" x="955" y="385"/>
+    <use href="#lampAmber" x="995" y="370"/><use href="#jackSocket" x="995" y="385"/>
+  </g>
+
+  <!-- Bay 2 Jack Field (Center Matrix) -->
+  <g>
+    <!-- Row 1 (y=245) -->
+    <use href="#lampGreen" x="1065" y="232"/><use href="#jackSocket" x="1065" y="245"/>
+    <use href="#lampOff" x="1105" y="232"/><use href="#jackSocket" x="1105" y="245"/>
+    <use href="#lampAmber" x="1145" y="232"/><use href="#jackSocket" x="1145" y="245"/>
+    <use href="#lampRed" x="1185" y="232"/><use href="#jackSocket" x="1185" y="245"/>
+    <use href="#lampGreen" x="1225" y="232"/><use href="#jackSocket" x="1225" y="245"/>
+    <use href="#lampOff" x="1265" y="232"/><use href="#jackSocket" x="1265" y="245"/>
+    <use href="#lampAmber" x="1305" y="232"/><use href="#jackSocket" x="1305" y="245"/>
+    <use href="#lampGreen" x="1345" y="232"/><use href="#jackSocket" x="1345" y="245"/>
+
+    <!-- Row 2 (y=290) -->
+    <use href="#lampOff" x="1065" y="277"/><use href="#jackSocket" x="1065" y="290"/>
+    <use href="#lampGreen" x="1105" y="277"/><use href="#jackSocket" x="1105" y="290"/>
+    <use href="#lampAmber" x="1145" y="277"/><use href="#jackSocket" x="1145" y="290"/>
+    <use href="#lampOff" x="1185" y="277"/><use href="#jackSocket" x="1185" y="290"/>
+    <use href="#lampGreen" x="1225" y="277"/><use href="#jackSocket" x="1225" y="290"/>
+    <use href="#lampOff" x="1265" y="277"/><use href="#jackSocket" x="1265" y="290"/>
+    <use href="#lampRed" x="1305" y="277"/><use href="#jackSocket" x="1305" y="290"/>
+    <use href="#lampGreen" x="1345" y="277"/><use href="#jackSocket" x="1345" y="290"/>
+
+    <!-- Row 3 (y=335) -->
+    <use href="#lampRed" x="1065" y="322"/><use href="#jackSocket" x="1065" y="335"/>
+    <use href="#lampOff" x="1105" y="322"/><use href="#jackSocket" x="1105" y="335"/>
+    <use href="#lampGreen" x="1145" y="322"/><use href="#jackSocket" x="1145" y="335"/>
+    <use href="#lampAmber" x="1185" y="322"/><use href="#jackSocket" x="1185" y="335"/>
+    <use href="#lampOff" x="1225" y="322"/><use href="#jackSocket" x="1225" y="335"/>
+    <use href="#lampGreen" x="1265" y="322"/><use href="#jackSocket" x="1265" y="335"/>
+    <use href="#lampAmber" x="1305" y="322"/><use href="#jackSocket" x="1305" y="335"/>
+    <use href="#lampOff" x="1345" y="322"/><use href="#jackSocket" x="1345" y="335"/>
+
+    <!-- Row 4 (y=380) -->
+    <use href="#lampGreen" x="1065" y="367"/><use href="#jackSocket" x="1065" y="380"/>
+    <use href="#lampAmber" x="1105" y="367"/><use href="#jackSocket" x="1105" y="380"/>
+    <use href="#lampOff" x="1145" y="367"/><use href="#jackSocket" x="1145" y="380"/>
+    <use href="#lampGreen" x="1185" y="367"/><use href="#jackSocket" x="1185" y="380"/>
+    <use href="#lampRed" x="1225" y="367"/><use href="#jackSocket" x="1225" y="380"/>
+    <use href="#lampOff" x="1265" y="367"/><use href="#jackSocket" x="1265" y="380"/>
+    <use href="#lampGreen" x="1305" y="367"/><use href="#jackSocket" x="1305" y="380"/>
+    <use href="#lampAmber" x="1345" y="367"/><use href="#jackSocket" x="1345" y="380"/>
+  </g>
+
+  <!-- Bay 3 Jack Field (Right: Distribution) -->
+  <g>
+    <!-- Row 1 (y=250) -->
+    <use href="#lampRed" x="1405" y="235"/><use href="#jackSocket" x="1405" y="250"/>
+    <use href="#lampGreen" x="1445" y="235"/><use href="#jackSocket" x="1445" y="250"/>
+    <use href="#lampOff" x="1485" y="235"/><use href="#jackSocket" x="1485" y="250"/>
+    <use href="#lampAmber" x="1525" y="235"/><use href="#jackSocket" x="1525" y="250"/>
+    <use href="#lampGreen" x="1565" y="235"/><use href="#jackSocket" x="1565" y="250"/>
+    <use href="#lampOff" x="1605" y="235"/><use href="#jackSocket" x="1605" y="250"/>
+
+    <!-- Row 2 (y=295) -->
+    <use href="#lampOff" x="1405" y="280"/><use href="#jackSocket" x="1405" y="295"/>
+    <use href="#lampAmber" x="1445" y="280"/><use href="#jackSocket" x="1445" y="295"/>
+    <use href="#lampGreen" x="1485" y="280"/><use href="#jackSocket" x="1485" y="295"/>
+    <use href="#lampOff" x="1525" y="280"/><use href="#jackSocket" x="1525" y="295"/>
+    <use href="#lampGreen" x="1565" y="280"/><use href="#jackSocket" x="1565" y="295"/>
+    <use href="#lampRed" x="1605" y="280"/><use href="#jackSocket" x="1605" y="295"/>
+
+    <!-- Row 3 (y=340) -->
+    <use href="#lampGreen" x="1405" y="325"/><use href="#jackSocket" x="1405" y="340"/>
+    <use href="#lampOff" x="1445" y="325"/><use href="#jackSocket" x="1445" y="340"/>
+    <use href="#lampAmber" x="1485" y="325"/><use href="#jackSocket" x="1485" y="340"/>
+    <use href="#lampGreen" x="1525" y="325"/><use href="#jackSocket" x="1525" y="340"/>
+    <use href="#lampOff" x="1565" y="325"/><use href="#jackSocket" x="1565" y="340"/>
+    <use href="#lampGreen" x="1605" y="325"/><use href="#jackSocket" x="1605" y="340"/>
+
+    <!-- Row 4 (y=385) -->
+    <use href="#lampAmber" x="1405" y="370"/><use href="#jackSocket" x="1405" y="385"/>
+    <use href="#lampGreen" x="1445" y="370"/><use href="#jackSocket" x="1445" y="385"/>
+    <use href="#lampOff" x="1485" y="370"/><use href="#jackSocket" x="1485" y="385"/>
+    <use href="#lampRed" x="1525" y="370"/><use href="#jackSocket" x="1525" y="385"/>
+    <use href="#lampGreen" x="1565" y="370"/><use href="#jackSocket" x="1565" y="385"/>
+    <use href="#lampOff" x="1605" y="370"/><use href="#jackSocket" x="1605" y="385"/>
+  </g>
+
+  <!-- Operator Shelf / Desk (Slanted Wood Surface) -->
+  <polygon points="720,442 1680,442 1695,505 705,505" fill="url(#woodShelf)" stroke="#1a0c05" stroke-width="3"/>
+  <rect x="705" y="505" width="990" height="45" fill="#241309" stroke="#1a0c05" stroke-width="3"/>
+
+  <!-- Shelf Edge Brass Trim -->
+  <line x1="705" y1="505" x2="1695" y2="505" stroke="url(#brassGrad)" stroke-width="3.5"/>
+
+  <!-- Vintage Toggle Switches on Desk -->
+  <g transform="translate(760, 475)">
+    <rect x="0" y="0" width="18" height="10" rx="3" fill="#090d16" stroke="#475569"/>
+    <line x1="9" y1="5" x2="9" y2="-10" stroke="#f1f5f9" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="9" cy="-10" r="3.5" fill="#e2e8f0"/>
+  </g>
+  <g transform="translate(820, 475)">
+    <rect x="0" y="0" width="18" height="10" rx="3" fill="#090d16" stroke="#475569"/>
+    <line x1="9" y1="5" x2="5" y2="-9" stroke="#f1f5f9" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="5" cy="-9" r="3.5" fill="#e2e8f0"/>
+  </g>
+  <g transform="translate(880, 475)">
+    <rect x="0" y="0" width="18" height="10" rx="3" fill="#090d16" stroke="#475569"/>
+    <line x1="9" y1="5" x2="13" y2="-9" stroke="#f1f5f9" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="13" cy="-9" r="3.5" fill="#e2e8f0"/>
+  </g>
+  <g transform="translate(940, 475)">
+    <rect x="0" y="0" width="18" height="10" rx="3" fill="#090d16" stroke="#475569"/>
+    <line x1="9" y1="5" x2="9" y2="-10" stroke="#f1f5f9" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="9" cy="-10" r="3.5" fill="#e2e8f0"/>
+  </g>
+  <g transform="translate(1460, 475)">
+    <rect x="0" y="0" width="18" height="10" rx="3" fill="#090d16" stroke="#475569"/>
+    <line x1="9" y1="5" x2="5" y2="-9" stroke="#f1f5f9" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="5" cy="-9" r="3.5" fill="#e2e8f0"/>
+  </g>
+  <g transform="translate(1520, 475)">
+    <rect x="0" y="0" width="18" height="10" rx="3" fill="#090d16" stroke="#475569"/>
+    <line x1="9" y1="5" x2="13" y2="-9" stroke="#f1f5f9" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="13" cy="-9" r="3.5" fill="#e2e8f0"/>
+  </g>
+  <g transform="translate(1580, 475)">
+    <rect x="0" y="0" width="18" height="10" rx="3" fill="#090d16" stroke="#475569"/>
+    <line x1="9" y1="5" x2="9" y2="-10" stroke="#f1f5f9" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="9" cy="-10" r="3.5" fill="#e2e8f0"/>
+  </g>
+
+  <!-- Hanging Patch Cords on Switchboard -->
+  <!-- Cord A (Crimson Red): from Bay 1 (835, 250) down to (940, 480) then up to Bay 2 (1065, 335) -->
+  <path d="M 835 250 C 830 380, 850 490, 940 480 C 1000 470, 1050 410, 1065 335" fill="none" stroke="url(#cordRed)" stroke-width="5.5" stroke-linecap="round" filter="url(#softShadow)"/>
+  <rect x="830" y="244" width="10" height="12" rx="2" fill="url(#brassGrad)" stroke="#451a03"/>
+  <rect x="1060" y="329" width="10" height="12" rx="2" fill="url(#brassGrad)" stroke="#451a03"/>
+
+  <!-- Cord B (Golden Yellow): from Bay 1 (915, 250) down to (1040, 460) then up to Bay 2 (1145, 245) -->
+  <path d="M 915 250 C 920 370, 950 475, 1040 460 C 1110 445, 1135 340, 1145 245" fill="none" stroke="url(#cordYellow)" stroke-width="5" stroke-linecap="round" filter="url(#softShadow)"/>
+  <rect x="910" y="244" width="10" height="12" rx="2" fill="url(#brassGrad)" stroke="#451a03"/>
+  <rect x="1140" y="239" width="10" height="12" rx="2" fill="url(#brassGrad)" stroke="#451a03"/>
+
+  <!-- Cord C (Electric Cyan): from Bay 2 (1265, 245) down to (1380, 485) then up to Bay 3 (1445, 295) -->
+  <path d="M 1265 245 C 1275 360, 1310 495, 1380 485 C 1425 475, 1435 370, 1445 295" fill="none" stroke="url(#cordCyan)" stroke-width="5" stroke-linecap="round" filter="url(#softShadow)"/>
+  <rect x="1260" y="239" width="10" height="12" rx="2" fill="url(#brassGrad)" stroke="#451a03"/>
+  <rect x="1440" y="289" width="10" height="12" rx="2" fill="url(#brassGrad)" stroke="#451a03"/>
+
+  <!-- Cord D (Purple): from Bay 3 (1525, 250) down to (1570, 460) up to Bay 3 (1605, 340) -->
+  <path d="M 1525 250 C 1515 360, 1530 475, 1570 460 C 1600 445, 1600 390, 1605 340" fill="none" stroke="url(#cordPurple)" stroke-width="4.5" stroke-linecap="round" filter="url(#softShadow)"/>
+  <rect x="1520" y="244" width="10" height="12" rx="2" fill="url(#brassGrad)" stroke="#451a03"/>
+  <rect x="1600" y="334" width="10" height="12" rx="2" fill="url(#brassGrad)" stroke="#451a03"/>
+
+  <!-- ==================== LAYER 4: LEFT AGENT CONSOLES ==================== -->
+  <!-- Left Desk Base -->
+  <polygon points="60,545 540,545 560,585 40,585" fill="#1e293b" stroke="#0f172a" stroke-width="3"/>
+  <rect x="40" y="585" width="520" height="15" fill="#0f172a"/>
+  <rect x="80" y="600" width="20" height="70" fill="#090d16" stroke="#1e293b" stroke-width="2"/>
+  <rect x="500" y="600" width="20" height="70" fill="#090d16" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- TERMINAL A (Upper Left: Session Monitor) -->
+  <rect x="150" y="360" width="300" height="20" rx="8" fill="#000000" opacity="0.6" filter="url(#dropShadow)"/>
+
+  <!-- Stand -->
+  <polygon points="270,355 330,355 345,395 255,395" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
+  <rect x="240" y="395" width="120" height="12" rx="4" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+
+  <!-- Monitor Housing -->
+  <rect x="160" y="175" width="280" height="185" rx="16" fill="url(#caseDark)" stroke="#475569" stroke-width="3" filter="url(#dropShadow)"/>
+  <g stroke="#0f172a" stroke-width="2.5">
+    <line x1="172" y1="200" x2="172" y2="280"/>
+    <line x1="178" y1="200" x2="178" y2="280"/>
+  </g>
+  <rect x="188" y="195" width="234" height="145" rx="10" fill="#020617" stroke="#0891b2" stroke-width="2"/>
+  <rect x="192" y="199" width="226" height="137" rx="8" fill="url(#crtGlassCyan)"/>
+
+  <!-- Screen Content: Agent Prompt Stream -->
+  <g>
+    <text x="206" y="228" font-family="monospace" font-size="22" font-weight="900" fill="#38bdf8" filter="url(#glowCyan)">&gt;_</text>
+    <rect x="236" y="213" width="10" height="18" fill="#38bdf8" filter="url(#glowCyan)"/>
+
+    <rect x="206" y="240" width="140" height="12" rx="4" fill="#0284c7" opacity="0.85"/>
+    <rect x="206" y="258" width="180" height="10" rx="3" fill="#06b6d4" opacity="0.6"/>
+    <rect x="206" y="273" width="110" height="10" rx="3" fill="#06b6d4" opacity="0.4"/>
+
+    <rect x="220" y="292" width="165" height="10" rx="3" fill="#38bdf8" opacity="0.75"/>
+    <rect x="220" y="307" width="130" height="10" rx="3" fill="#38bdf8" opacity="0.5"/>
+
+    <circle cx="400" cy="210" r="3.5" fill="#22c55e" filter="url(#glowGreen)"/>
+    <circle cx="412" cy="210" r="3.5" fill="#06b6d4" filter="url(#glowCyan)"/>
+  </g>
+
+  <!-- TERMINAL B (Lower Left: Agent Workstation) -->
+  <rect x="90" y="555" width="370" height="25" rx="10" fill="#000000" opacity="0.6" filter="url(#dropShadow)"/>
+
+  <rect x="100" y="415" width="350" height="145" rx="14" fill="url(#caseDark)" stroke="#334155" stroke-width="3" filter="url(#dropShadow)"/>
+  <rect x="120" y="428" width="190" height="115" rx="8" fill="#020617" stroke="#059669" stroke-width="2"/>
+  <rect x="124" y="432" width="182" height="107" rx="6" fill="url(#crtGlassGreen)"/>
+
+  <!-- Green Phosphor Screen Display -->
+  <g>
+    <text x="135" y="458" font-family="monospace" font-size="20" font-weight="900" fill="#34d399" filter="url(#glowGreen)">&gt;_</text>
+    <path d="M 165 452 L 180 452 L 195 440 L 210 465 L 225 452 L 245 452" fill="none" stroke="#34d399" stroke-width="2.5" filter="url(#glowGreen)"/>
+    <path d="M 135 495 L 160 495 L 175 475 L 195 510 L 215 480 L 235 480 L 250 465 L 270 515 L 290 495" fill="none" stroke="#34d399" stroke-width="2" filter="url(#glowGreen)"/>
+    <circle cx="290" cy="495" r="3" fill="#6ee7b7" filter="url(#glowGreen)"/>
+  </g>
+
+  <!-- Workstation Control Panel -->
+  <g transform="translate(325, 430)">
+    <circle cx="35" cy="25" r="18" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+    <line x1="35" y1="25" x2="44" y2="13" stroke="#fde047" stroke-width="2.5" stroke-linecap="round"/>
+
+    <rect x="10" y="55" width="12" height="6" rx="2" fill="#020617"/>
+    <line x1="16" y1="58" x2="16" y2="50" stroke="#f1f5f9" stroke-width="2"/>
+    <rect x="30" y="55" width="12" height="6" rx="2" fill="#020617"/>
+    <line x1="36" y1="58" x2="36" y2="50" stroke="#f1f5f9" stroke-width="2"/>
+    <rect x="50" y="55" width="12" height="6" rx="2" fill="#020617"/>
+    <line x1="56" y1="58" x2="56" y2="50" stroke="#f1f5f9" stroke-width="2"/>
+
+    <circle cx="20" cy="80" r="3" fill="#22c55e"/>
+    <circle cx="35" cy="80" r="3" fill="#eab308"/>
+    <circle cx="50" cy="80" r="3" fill="#ef4444"/>
+  </g>
+
+  <!-- Keyboard Deck -->
+  <polygon points="120,565 370,565 385,585 105,585" fill="#334155" stroke="#1e293b" stroke-width="1.5"/>
+  <g fill="#64748b" opacity="0.8">
+    <rect x="135" y="568" width="220" height="4" rx="1"/>
+    <rect x="130" y="574" width="230" height="4" rx="1"/>
+    <rect x="125" y="580" width="240" height="4" rx="1"/>
+  </g>
+
+  <!-- Thick Floor Cables from Left Consoles into Switchboard -->
+  <path d="M 380 575 C 450 610, 600 620, 750 540" fill="none" stroke="#0f172a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 380 575 C 450 610, 600 620, 750 540" fill="none" stroke="#1e293b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 420 580 C 500 635, 650 630, 780 545" fill="none" stroke="#0284c7" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- ==================== LAYER 5: RIGHT CONSUMER CONSOLES ==================== -->
+  <!-- Right Desk Base -->
+  <polygon points="1860,545 2340,545 2360,585 1840,585" fill="#1e293b" stroke="#0f172a" stroke-width="3"/>
+  <rect x="1840" y="585" width="520" height="15" fill="#0f172a"/>
+  <rect x="1880" y="600" width="20" height="70" fill="#090d16" stroke="#1e293b" stroke-width="2"/>
+  <rect x="2300" y="600" width="20" height="70" fill="#090d16" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- TERMINAL C (Upper Right: Signal Evaluator & Spectrum Analyzer) -->
+  <rect x="1940" y="360" width="310" height="20" rx="8" fill="#000000" opacity="0.6" filter="url(#dropShadow)"/>
+
+  <!-- Stand -->
+  <polygon points="2065,355 2125,355 2140,395 2050,395" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
+  <rect x="2035" y="395" width="120" height="12" rx="4" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+
+  <!-- Housing -->
+  <rect x="1950" y="175" width="290" height="185" rx="16" fill="url(#caseDark)" stroke="#475569" stroke-width="3" filter="url(#dropShadow)"/>
+
+  <!-- Twin VU Meters -->
+  <g transform="translate(2020, 190)">
+    <rect x="0" y="0" width="50" height="28" rx="4" fill="#020617" stroke="#eab308" stroke-width="1.5"/>
+    <path d="M 6 22 A 18 18 0 0 1 44 22" fill="none" stroke="#ca8a04" stroke-width="1.5"/>
+    <line x1="25" y1="24" x2="38" y2="7" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(2120, 190)">
+    <rect x="0" y="0" width="50" height="28" rx="4" fill="#020617" stroke="#eab308" stroke-width="1.5"/>
+    <path d="M 6 22 A 18 18 0 0 1 44 22" fill="none" stroke="#ca8a04" stroke-width="1.5"/>
+    <line x1="25" y1="24" x2="20" y2="6" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Screen Bevel -->
+  <rect x="1975" y="225" width="240" height="120" rx="8" fill="#020617" stroke="#9333ea" stroke-width="2"/>
+  <rect x="1979" y="229" width="232" height="112" rx="6" fill="url(#crtGlassPurple)"/>
+
+  <!-- Screen Display: 5-Stage Spectrum Analyzer (Stages 0-4) -->
+  <g>
+    <!-- Stage 0: Raw (Cyan) -->
+    <rect x="2000" y="280" width="18" height="50" rx="3" fill="#06b6d4" filter="url(#glowCyan)"/>
+    <!-- Stage 1: Topic (Emerald) -->
+    <rect x="2035" y="260" width="18" height="70" rx="3" fill="#10b981" filter="url(#glowGreen)"/>
+    <!-- Stage 2: Classify (Amber) -->
+    <rect x="2070" y="245" width="18" height="85" rx="3" fill="#f59e0b" filter="url(#glowAmber)"/>
+    <!-- Stage 3: Aggregate (Coral) -->
+    <rect x="2105" y="255" width="18" height="75" rx="3" fill="#f97316"/>
+    <!-- Stage 4: Stats (Purple) -->
+    <rect x="2140" y="270" width="18" height="60" rx="3" fill="#c084fc"/>
+
+    <!-- Oscilloscope Overlay Line -->
+    <path d="M 1985 285 Q 2025 240 2060 275 T 2120 270 T 2180 260 T 2205 280" fill="none" stroke="#f8fafc" stroke-width="2" filter="url(#glowCyan)" opacity="0.85"/>
+  </g>
+
+  <!-- TERMINAL D (Lower Right: Reel-to-Reel Event Logger & Protocol Unit) -->
+  <rect x="1890" y="555" width="370" height="25" rx="10" fill="#000000" opacity="0.6" filter="url(#dropShadow)"/>
+
+  <rect x="1900" y="415" width="350" height="145" rx="14" fill="url(#caseDark)" stroke="#334155" stroke-width="3" filter="url(#dropShadow)"/>
+
+  <!-- Reel-to-Reel Tape Deck Section -->
+  <!-- Left Reel -->
+  <g transform="translate(1985, 470)">
+    <circle cx="0" cy="0" r="38" fill="#020617"/>
+    <circle cx="0" cy="0" r="35" fill="#451a03"/>
+    <circle cx="0" cy="0" r="37" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+    <circle cx="0" cy="0" r="14" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="-36" x2="0" y2="36" stroke="#e2e8f0" stroke-width="3"/>
+    <line x1="-31" y1="18" x2="31" y2="-18" stroke="#e2e8f0" stroke-width="3"/>
+    <line x1="-31" y1="-18" x2="31" y2="18" stroke="#e2e8f0" stroke-width="3"/>
+    <circle cx="0" cy="0" r="6" fill="#0f172a"/>
+  </g>
+
+  <!-- Right Reel -->
+  <g transform="translate(2085, 470)">
+    <circle cx="0" cy="0" r="38" fill="#020617"/>
+    <circle cx="0" cy="0" r="35" fill="#451a03"/>
+    <circle cx="0" cy="0" r="37" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+    <circle cx="0" cy="0" r="14" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="-36" x2="0" y2="36" stroke="#e2e8f0" stroke-width="3"/>
+    <line x1="-31" y1="18" x2="31" y2="-18" stroke="#e2e8f0" stroke-width="3"/>
+    <line x1="-31" y1="-18" x2="31" y2="18" stroke="#e2e8f0" stroke-width="3"/>
+    <circle cx="0" cy="0" r="6" fill="#0f172a"/>
+  </g>
+
+  <!-- Tape Path -->
+  <path d="M 1985 505 L 2015 520 L 2035 515 L 2055 520 L 2085 505" fill="none" stroke="#78350f" stroke-width="3"/>
+  <rect x="2025" y="515" width="20" height="12" rx="2" fill="#64748b" stroke="#020617"/>
+
+  <!-- Vertical LED Level Meter Columns -->
+  <g transform="translate(2160, 435)">
+    <!-- Column 1 -->
+    <g fill="#22c55e">
+      <rect x="0" y="80" width="10" height="5" rx="1"/>
+      <rect x="0" y="70" width="10" height="5" rx="1"/>
+      <rect x="0" y="60" width="10" height="5" rx="1"/>
+      <rect x="0" y="50" width="10" height="5" rx="1"/>
+      <rect x="0" y="40" width="10" height="5" rx="1"/>
+    </g>
+    <g fill="#eab308">
+      <rect x="0" y="30" width="10" height="5" rx="1"/>
+      <rect x="0" y="20" width="10" height="5" rx="1"/>
+    </g>
+    <g fill="#ef4444">
+      <rect x="0" y="10" width="10" height="5" rx="1"/>
+      <rect x="0" y="0" width="10" height="5" rx="1"/>
+    </g>
+
+    <!-- Column 2 -->
+    <g transform="translate(16, 0)">
+      <g fill="#22c55e">
+        <rect x="0" y="80" width="10" height="5" rx="1"/>
+        <rect x="0" y="70" width="10" height="5" rx="1"/>
+        <rect x="0" y="60" width="10" height="5" rx="1"/>
+        <rect x="0" y="50" width="10" height="5" rx="1"/>
+      </g>
+      <g fill="#eab308">
+        <rect x="0" y="40" width="10" height="5" rx="1"/>
+        <rect x="0" y="30" width="10" height="5" rx="1"/>
+      </g>
+      <g fill="#ef4444" opacity="0.3">
+        <rect x="0" y="20" width="10" height="5" rx="1"/>
+        <rect x="0" y="10" width="10" height="5" rx="1"/>
+        <rect x="0" y="0" width="10" height="5" rx="1"/>
+      </g>
+    </g>
+
+    <!-- Column 3 -->
+    <g transform="translate(32, 0)">
+      <g fill="#22c55e">
+        <rect x="0" y="80" width="10" height="5" rx="1"/>
+        <rect x="0" y="70" width="10" height="5" rx="1"/>
+        <rect x="0" y="60" width="10" height="5" rx="1"/>
+        <rect x="0" y="50" width="10" height="5" rx="1"/>
+        <rect x="0" y="40" width="10" height="5" rx="1"/>
+        <rect x="0" y="30" width="10" height="5" rx="1"/>
+      </g>
+      <g fill="#eab308">
+        <rect x="0" y="20" width="10" height="5" rx="1"/>
+        <rect x="0" y="10" width="10" height="5" rx="1"/>
+      </g>
+      <g fill="#ef4444">
+        <rect x="0" y="0" width="10" height="5" rx="1"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Output Protocol Slot -->
+  <rect x="1935" y="535" width="200" height="12" rx="3" fill="#020617" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="1960,542 2110,542 2105,572 1965,572" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+  <g stroke="#94a3b8" stroke-width="1.5">
+    <line x1="1975" y1="550" x2="2095" y2="550"/>
+    <line x1="1975" y1="557" x2="2070" y2="557"/>
+    <line x1="1975" y1="564" x2="2085" y2="564"/>
+  </g>
+
+  <!-- Floor Data Conduits from Right Consoles -->
+  <path d="M 1910 575 C 1820 620, 1720 615, 1640 540" fill="none" stroke="#0f172a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 1910 575 C 1820 620, 1720 615, 1640 540" fill="none" stroke="#1e293b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 1880 580 C 1780 635, 1680 625, 1610 545" fill="none" stroke="#a855f7" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- ==================== LAYER 6: TAUT STRINGS & SOUNDWAVES (BACK) ==================== -->
+  <!-- String 1: Left Terminal A to Ear Upper Left Hand (Can 1) -->
+  <line x1="440" y1="205" x2="940" y2="285" stroke="#fef08a" stroke-width="3" filter="url(#glowAmber)"/>
+  <circle cx="560" cy="224" r="3.5" fill="#ffffff" filter="url(#glowAmber)"/>
+  <circle cx="700" cy="246" r="4.5" fill="#fef08a" filter="url(#glowAmber)"/>
+  <circle cx="830" cy="267" r="3.5" fill="#ffffff" filter="url(#glowAmber)"/>
+
+  <!-- String 2: Left Terminal B to Ear Lower Left Hand / Concha (Can 2) -->
+  <line x1="400" y1="445" x2="1105" y2="375" stroke="#fef08a" stroke-width="3" filter="url(#glowAmber)"/>
+  <circle cx="550" cy="431" r="4" fill="#ffffff" filter="url(#glowAmber)"/>
+  <circle cx="750" cy="410" r="5" fill="#fef08a" filter="url(#glowAmber)"/>
+  <circle cx="950" cy="390" r="4" fill="#ffffff" filter="url(#glowAmber)"/>
+
+  <!-- String 3: Ear Lower Right Hand (Can 3) to Right Upper Terminal C -->
+  <line x1="1450" y1="430" x2="1950" y2="225" stroke="#fef08a" stroke-width="3" filter="url(#glowAmber)"/>
+  <circle cx="1580" cy="377" r="4" fill="#ffffff" filter="url(#glowAmber)"/>
+  <circle cx="1720" cy="319" r="5" fill="#fef08a" filter="url(#glowAmber)"/>
+  <circle cx="1850" cy="266" r="4" fill="#ffffff" filter="url(#glowAmber)"/>
+
+  <!-- String 4: Switchboard Output Jack to Right Lower Terminal D -->
+  <line x1="1565" y1="340" x2="1910" y2="440" stroke="#fef08a" stroke-width="2.5" filter="url(#glowAmber)" stroke-dasharray="8 4"/>
+
+  <!-- ==================== LAYER 7: THE LIVING EAR CHARACTER ==================== -->
+  <!-- Ear Floor Shadow -->
+  <ellipse cx="1205" cy="622" rx="140" ry="22" fill="#000000" opacity="0.75" filter="url(#dropShadow)"/>
+
+  <!-- LEGS & SNEAKERS -->
+  <!-- Left Leg -->
+  <g>
+    <path d="M 1152 460 Q 1146 525 1136 575" fill="none" stroke="#f06ca6" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 1152 460 Q 1146 525 1136 575" fill="none" stroke="#ff8fbf" stroke-width="14" stroke-linecap="round"/>
+    <rect x="1122" y="565" width="22" height="12" rx="4" fill="#ffffff" stroke="#f06ca6" stroke-width="2"/>
+
+    <!-- Left Sneaker (Facing Left) -->
+    <ellipse cx="1115" cy="618" rx="35" ry="8" fill="#000000" opacity="0.5"/>
+    <path d="M 1140 575 L 1145 605 C 1145 612, 1130 615, 1085 615 C 1070 615, 1065 606, 1072 598 L 1105 580 Z" fill="url(#sneakerCyan)" stroke="#f06ca6" stroke-width="3"/>
+    <path d="M 1088 588 C 1075 595, 1068 604, 1072 612 L 1092 614 Z" fill="#f8fafc" stroke="#f06ca6" stroke-width="2"/>
+    <path d="M 1068 610 L 1145 610 L 1145 617 L 1070 617 Z" fill="#ffffff" stroke="#f06ca6" stroke-width="2"/>
+    <circle cx="1125" cy="595" r="5.5" fill="#ffffff"/>
+    <polygon points="1125,591 1126.5,594 1130,594 1127,596 1128,599 1125,597 1122,599 1123,596 1120,594 1123.5,594" fill="#ef4444"/>
+    <line x1="1108" y1="583" x2="1118" y2="588" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="1112" y1="588" x2="1124" y2="593" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Leg -->
+  <g>
+    <path d="M 1248 460 Q 1258 525 1268 575" fill="none" stroke="#f06ca6" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 1248 460 Q 1258 525 1268 575" fill="none" stroke="#ff8fbf" stroke-width="14" stroke-linecap="round"/>
+    <rect x="1256" y="565" width="22" height="12" rx="4" fill="#ffffff" stroke="#f06ca6" stroke-width="2"/>
+
+    <!-- Right Sneaker (Facing Right) -->
+    <ellipse cx="1290" cy="618" rx="35" ry="8" fill="#000000" opacity="0.5"/>
+    <path d="M 1260 575 L 1255 605 C 1255 612, 1270 615, 1315 615 C 1330 615, 1335 606, 1328 598 L 1295 580 Z" fill="url(#sneakerCyan)" stroke="#f06ca6" stroke-width="3"/>
+    <path d="M 1312 588 C 1325 595, 1332 604, 1328 612 L 1308 614 Z" fill="#f8fafc" stroke="#f06ca6" stroke-width="2"/>
+    <path d="M 1332 610 L 1255 610 L 1255 617 L 1330 617 Z" fill="#ffffff" stroke="#f06ca6" stroke-width="2"/>
+    <circle cx="1275" cy="595" r="5.5" fill="#ffffff"/>
+    <polygon points="1275,591 1276.5,594 1280,594 1277,596 1278,599 1275,597 1272,599 1273,596 1270,594 1273.5,594" fill="#ef4444"/>
+    <line x1="1292" y1="583" x2="1282" y2="588" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="1288" y1="588" x2="1276" y2="593" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- MULTITASKING ARMS (Behind Body: Arm 1 & Arm 3) -->
+  <!-- Arm 3: Upper Right (Actively Plugging Brass Jack into Switchboard) -->
+  <g>
+    <path d="M 1290 320 Q 1370 260 1435 225" fill="none" stroke="#f06ca6" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 1290 320 Q 1370 260 1435 225" fill="none" stroke="#ff8fbf" stroke-width="13" stroke-linecap="round"/>
+
+    <!-- Hand & Brass Plug -->
+    <circle cx="1435" cy="225" r="14" fill="#ffffff" stroke="#f06ca6" stroke-width="2.5"/>
+    <path d="M 1432 215 C 1436 210, 1445 210, 1448 218" fill="none" stroke="#f06ca6" stroke-width="2.5"/>
+
+    <rect x="1440" y="218" width="18" height="8" rx="2" fill="url(#brassGrad)" stroke="#f06ca6" stroke-width="1.5" transform="rotate(-15 1440 218)"/>
+    <line x1="1454" y1="218" x2="1465" y2="215" stroke="#fef08a" stroke-width="3"/>
+
+    <!-- Connection Sparks / Snap Glow -->
+    <g transform="translate(1465, 218)">
+      <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#fef08a" filter="url(#glowAmber)"/>
+      <circle cx="0" cy="0" r="4" fill="#ffffff" filter="url(#glowAmber)"/>
+    </g>
+
+    <!-- Patch Cord from this hand -->
+    <path d="M 1430 230 C 1420 320, 1370 380, 1305 370" fill="none" stroke="url(#cordCyan)" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Arm 1: Upper Left (Reaching to Hold Tin Can #1) -->
+  <g>
+    <path d="M 1125 340 Q 1040 280 960 290" fill="none" stroke="#f06ca6" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 1125 340 Q 1040 280 960 290" fill="none" stroke="#ff8fbf" stroke-width="13" stroke-linecap="round"/>
+
+    <circle cx="960" cy="290" r="14" fill="#ffffff" stroke="#f06ca6" stroke-width="2.5"/>
+    <path d="M 952 280 C 950 274, 960 272, 964 278" fill="none" stroke="#f06ca6" stroke-width="2.5"/>
+    <path d="M 945 288 C 940 284, 946 278, 952 284" fill="none" stroke="#f06ca6" stroke-width="2.5"/>
+  </g>
+
+  <!-- MAIN EAR BODY (Ohrmuschel Silhouette) -->
+  <g filter="url(#dropShadow)">
+    <!-- Base Outer Ear Silhouette -->
+    <path d="M 1125 320 C 1115 240, 1175 195, 1245 205 C 1320 215, 1355 285, 1350 370 C 1345 440, 1310 480, 1265 485 C 1220 490, 1180 465, 1185 435 C 1190 405, 1135 385, 1125 320 Z" fill="url(#earSkin)" stroke="#f06ca6" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- Ear Sculptural Highlight -->
+    <path d="M 1145 255 C 1175 220, 1235 215, 1285 230 C 1325 245, 1340 290, 1335 350" fill="none" stroke="url(#earHighlight)" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Inner Antihelix Ridge -->
+    <path d="M 1280 280 C 1285 340, 1270 405, 1220 430" fill="none" stroke="#f06ca6" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 1280 280 C 1285 340, 1270 405, 1220 430" fill="none" stroke="#ff8fbf" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 1280 280 C 1255 255, 1215 250, 1185 265" fill="none" stroke="#ff8fbf" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Concha -->
+    <path d="M 1165 345 C 1205 340, 1230 365, 1225 410 C 1220 435, 1195 440, 1175 425 C 1160 415, 1155 375, 1165 345 Z" fill="url(#earConcha)" stroke="#f06ca6" stroke-width="4"/>
+
+    <!-- Tragus -->
+    <path d="M 1135 348 C 1160 362, 1160 388, 1135 402 Z" fill="#ff8fbf" stroke="#f06ca6" stroke-width="4.5"/>
+  </g>
+
+  <!-- EXPRESSIVE CARTOON EYES & CHARACTER PERSONALITY -->
+  <g>
+    <!-- Left Eye -->
+    <g>
+      <ellipse cx="1162" cy="304" rx="20" ry="24" fill="#ffffff" stroke="#f06ca6" stroke-width="4.5"/>
+      <circle cx="1165" cy="306" r="11" fill="#0f172a"/>
+      <circle cx="1165" cy="306" r="6" fill="#0284c7"/>
+      <circle cx="1162" cy="300" r="4.5" fill="#ffffff"/>
+      <circle cx="1169" cy="310" r="2.5" fill="#ffffff"/>
+    </g>
+
+    <!-- Right Eye -->
+    <g>
+      <ellipse cx="1204" cy="300" rx="19" ry="23" fill="#ffffff" stroke="#f06ca6" stroke-width="4.5"/>
+      <circle cx="1207" cy="302" r="10.5" fill="#0f172a"/>
+      <circle cx="1207" cy="302" r="5.5" fill="#0284c7"/>
+      <circle cx="1204" cy="296" r="4" fill="#ffffff"/>
+      <circle cx="1211" cy="306" r="2" fill="#ffffff"/>
+    </g>
+
+    <!-- Animated Eyebrows -->
+    <path d="M 1142 276 Q 1162 262 1180 274" fill="none" stroke="#f06ca6" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 1190 273 Q 1210 260 1228 270" fill="none" stroke="#f06ca6" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Rosy Cheek Blush -->
+    <ellipse cx="1148" cy="336" rx="14" ry="7" fill="#f43f5e" opacity="0.4"/>
+    <ellipse cx="1225" cy="332" rx="12" ry="6" fill="#f43f5e" opacity="0.3"/>
+  </g>
+
+  <!-- FOREGROUND ARMS: Arm 2 & Arm 4 -->
+  <!-- Arm 2: Lower Left (Holding Can #2 Directly to Concha) -->
+  <g>
+    <path d="M 1120 415 Q 1090 405 1105 375" fill="none" stroke="#f06ca6" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 1120 415 Q 1090 405 1105 375" fill="none" stroke="#ff8fbf" stroke-width="12" stroke-linecap="round"/>
+
+    <circle cx="1105" cy="375" r="13" fill="#ffffff" stroke="#f06ca6" stroke-width="2.5"/>
+    <path d="M 1100 365 C 1096 360, 1105 358, 1108 365" fill="none" stroke="#f06ca6" stroke-width="2.5"/>
+  </g>
+
+  <!-- Arm 4: Lower Right (Routing Can #3 to Consumer Consoles) -->
+  <g>
+    <path d="M 1280 420 Q 1360 445 1440 430" fill="none" stroke="#f06ca6" stroke-width="19" stroke-linecap="round"/>
+    <path d="M 1280 420 Q 1360 445 1440 430" fill="none" stroke="#ff8fbf" stroke-width="13" stroke-linecap="round"/>
+
+    <circle cx="1440" cy="430" r="14" fill="#ffffff" stroke="#f06ca6" stroke-width="2.5"/>
+    <path d="M 1435 420 C 1432 414, 1442 412, 1446 418" fill="none" stroke="#f06ca6" stroke-width="2.5"/>
+    <path d="M 1448 422 C 1454 418, 1458 424, 1452 428" fill="none" stroke="#f06ca6" stroke-width="2.5"/>
+  </g>
+
+  <!-- ==================== LAYER 8: THE TIN CANS (DOSENTELEFONE) ==================== -->
+  <!-- CAN 1: Held in Upper Left Hand (x=940, y=285) -->
+  <g transform="translate(930, 260) rotate(-12)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="56" height="74" rx="4" fill="url(#tinCanBody)" stroke="#334155" stroke-width="2"/>
+    <line x1="0" y1="22" x2="56" y2="22" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="25" x2="56" y2="25" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="36" x2="56" y2="36" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="39" x2="56" y2="39" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="50" x2="56" y2="50" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="53" x2="56" y2="53" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="28" cy="2" rx="28" ry="8" fill="url(#tinCanCap)" stroke="#334155" stroke-width="2"/>
+    <ellipse cx="28" cy="74" rx="28" ry="8" fill="url(#tinCanCap)" stroke="#334155" stroke-width="2"/>
+    <circle cx="28" cy="74" r="4" fill="#78350f" stroke="#fde047" stroke-width="1.5"/>
+  </g>
+
+  <!-- CAN 2: Pressed Directly Against Ear Canal (x=1085, y=345) -->
+  <g transform="translate(1085, 345) rotate(15)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="52" height="70" rx="4" fill="url(#tinCanBody)" stroke="#334155" stroke-width="2"/>
+    <line x1="0" y1="20" x2="52" y2="20" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="23" x2="52" y2="23" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="34" x2="52" y2="34" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="37" x2="52" y2="37" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="48" x2="52" y2="48" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="51" x2="52" y2="51" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="26" cy="2" rx="26" ry="7" fill="url(#tinCanInside)" stroke="#334155" stroke-width="2"/>
+    <ellipse cx="26" cy="70" rx="26" ry="7" fill="url(#tinCanCap)" stroke="#334155" stroke-width="2"/>
+    <circle cx="26" cy="70" r="4" fill="#78350f" stroke="#fde047" stroke-width="1.5"/>
+  </g>
+
+  <!-- CAN 3: Held in Lower Right Hand (x=1440, y=400) -->
+  <g transform="translate(1440, 400) rotate(22)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="54" height="72" rx="4" fill="url(#tinCanBody)" stroke="#334155" stroke-width="2"/>
+    <line x1="0" y1="20" x2="54" y2="20" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="23" x2="54" y2="23" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="35" x2="54" y2="35" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="38" x2="54" y2="38" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="50" x2="54" y2="50" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="53" x2="54" y2="53" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="27" cy="2" rx="27" ry="8" fill="url(#tinCanCap)" stroke="#334155" stroke-width="2"/>
+    <ellipse cx="27" cy="72" rx="27" ry="8" fill="url(#tinCanCap)" stroke="#334155" stroke-width="2"/>
+    <circle cx="27" cy="72" r="4" fill="#78350f" stroke="#fde047" stroke-width="1.5"/>
+  </g>
+
+  <!-- CAN 4: Mounted on Top of Left CRT Monitor (Terminal A) -->
+  <g transform="translate(415, 160) rotate(-10)" filter="url(#dropShadow)">
+    <rect x="18" y="70" width="20" height="8" rx="2" fill="#0f172a"/>
+    <rect x="0" y="0" width="56" height="72" rx="4" fill="url(#tinCanBody)" stroke="#334155" stroke-width="2"/>
+    <line x1="0" y1="20" x2="56" y2="20" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="23" x2="56" y2="23" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="35" x2="56" y2="35" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="38" x2="56" y2="38" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="50" x2="56" y2="50" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="53" x2="56" y2="53" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="28" cy="2" rx="28" ry="8" fill="url(#tinCanInside)" stroke="#334155" stroke-width="2"/>
+    <ellipse cx="28" cy="72" rx="28" ry="8" fill="url(#tinCanCap)" stroke="#334155" stroke-width="2"/>
+    <circle cx="28" cy="72" r="4" fill="#78350f" stroke="#fde047" stroke-width="1.5"/>
+  </g>
+
+  <!-- CAN 5: On Desk of Left Workstation (Terminal B) -->
+  <g transform="translate(370, 420) rotate(-6)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="52" height="68" rx="4" fill="url(#tinCanBody)" stroke="#334155" stroke-width="2"/>
+    <line x1="0" y1="18" x2="52" y2="18" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="21" x2="52" y2="21" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="32" x2="52" y2="32" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="35" x2="52" y2="35" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="46" x2="52" y2="46" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="49" x2="52" y2="49" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="26" cy="2" rx="26" ry="7" fill="url(#tinCanInside)" stroke="#334155" stroke-width="2"/>
+    <ellipse cx="26" cy="68" rx="26" ry="7" fill="url(#tinCanCap)" stroke="#334155" stroke-width="2"/>
+    <circle cx="26" cy="68" r="4" fill="#78350f" stroke="#fde047" stroke-width="1.5"/>
+  </g>
+
+  <!-- CAN 6: On Bracket of Right Terminal C -->
+  <g transform="translate(1930, 185) rotate(14)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="54" height="70" rx="4" fill="url(#tinCanBody)" stroke="#334155" stroke-width="2"/>
+    <line x1="0" y1="18" x2="54" y2="18" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="21" x2="54" y2="21" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="33" x2="54" y2="33" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="36" x2="54" y2="36" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="48" x2="54" y2="48" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="51" x2="54" y2="51" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="27" cy="2" rx="27" ry="8" fill="url(#tinCanCap)" stroke="#334155" stroke-width="2"/>
+    <ellipse cx="27" cy="70" rx="27" ry="8" fill="url(#tinCanInside)" stroke="#334155" stroke-width="2"/>
+    <circle cx="27" cy="2" r="4" fill="#78350f" stroke="#fde047" stroke-width="1.5"/>
+  </g>
+
+  <!-- CAN 7: On Bracket of Right Logger (Terminal D) -->
+  <g transform="translate(1895, 410) rotate(8)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="50" height="66" rx="4" fill="url(#tinCanBody)" stroke="#334155" stroke-width="2"/>
+    <line x1="0" y1="18" x2="50" y2="18" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="21" x2="50" y2="21" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="32" x2="50" y2="32" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="35" x2="50" y2="35" stroke="#475569" stroke-width="2"/>
+    <line x1="0" y1="46" x2="50" y2="46" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="0" y1="49" x2="50" y2="49" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="25" cy="2" rx="25" ry="7" fill="url(#tinCanCap)" stroke="#334155" stroke-width="2"/>
+    <ellipse cx="25" cy="66" rx="25" ry="7" fill="url(#tinCanInside)" stroke="#334155" stroke-width="2"/>
+    <circle cx="25" cy="2" r="4" fill="#78350f" stroke="#fde047" stroke-width="1.5"/>
+  </g>
+
+  <!-- ==================== LAYER 9: ACOUSTIC SOUNDWAVE RIPPLES ==================== -->
+  <!-- Soundwaves at Can 1 (Upper Left Hand) -->
+  <g stroke="#38bdf8" fill="none" stroke-linecap="round" filter="url(#glowCyan)">
+    <path d="M 985 260 A 25 25 0 0 1 988 295" stroke-width="3"/>
+    <path d="M 995 252 A 38 38 0 0 1 1000 302" stroke-width="2.5" opacity="0.8"/>
+    <path d="M 1006 244 A 52 52 0 0 1 1012 310" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- Soundwaves radiating directly INTO Ear Canal (from Can 2) -->
+  <g stroke="#f59e0b" fill="none" stroke-linecap="round" filter="url(#glowAmber)">
+    <path d="M 1120 355 A 20 20 0 0 1 1122 385" stroke-width="3.5"/>
+    <path d="M 1130 350 A 30 30 0 0 1 1134 390" stroke-width="2.5" opacity="0.85"/>
+    <path d="M 1140 345 A 42 42 0 0 1 1146 395" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- Soundwaves at Terminal A (Collecting prompts from monitor) -->
+  <g stroke="#38bdf8" fill="none" stroke-linecap="round" filter="url(#glowCyan)" opacity="0.8">
+    <path d="M 405 175 A 22 22 0 0 0 400 215" stroke-width="3"/>
+    <path d="M 395 168 A 34 34 0 0 0 388 222" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Soundwaves at Right Terminal C (Consumer receiving structured event) -->
+  <g stroke="#c084fc" fill="none" stroke-linecap="round" filter="url(#glowCyan)" opacity="0.85">
+    <path d="M 1975 230 A 24 24 0 0 1 1980 268" stroke-width="3"/>
+    <path d="M 1988 222 A 38 38 0 0 1 1995 275" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- ==================== LAYER 10: BRANDING HEADER LOCKUP ==================== -->
+  <!-- Top Center Header Pill Card -->
+  <g filter="url(#dropShadow)">
+    <rect x="760" y="24" width="880" height="82" rx="22" fill="#0f172a" stroke="#334155" stroke-width="2" opacity="0.96"/>
+    <rect x="762" y="26" width="876" height="38" rx="20" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.08"/>
+
+    <!-- Terminal Prompt Icon Box -->
+    <rect x="785" y="41" width="48" height="48" rx="12" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5" filter="url(#glowCyan)"/>
+    <text x="797" y="74" font-family="monospace" font-size="28" font-weight="900" fill="#ffffff">&gt;_</text>
+
+    <!-- Logo / Wordmark -->
+    <text x="852" y="75" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#f8fafc" letter-spacing="-0.5">prompt<tspan fill="#38bdf8">-</tspan><tspan fill="#fb923c">listener</tspan></text>
+
+    <!-- Tagline wörtlich aus README -->
+    <text x="854" y="95" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#94a3b8" letter-spacing="2.2" text-transform="uppercase">collect and evaluate prompts from agent sessions</text>
+
+    <!-- Vintage Status Jewels on Right Edge of Header -->
+    <g transform="translate(1575, 65)">
+      <circle cx="0" cy="0" r="5.5" fill="#22c55e" filter="url(#glowGreen)"/>
+      <circle cx="-1.5" cy="-1.5" r="1.5" fill="#ffffff" opacity="0.8"/>
+      <circle cx="18" cy="0" r="5.5" fill="#eab308" filter="url(#glowAmber)"/>
+      <circle cx="16.5" cy="-1.5" r="1.5" fill="#ffffff" opacity="0.8"/>
+      <circle cx="36" cy="0" r="5.5" fill="#ef4444" filter="url(#glowAmber)"/>
+      <circle cx="34.5" cy="-1.5" r="1.5" fill="#ffffff" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Outer Canvas Border Frame -->
+  <rect x="1" y="1" width="2398" height="678" rx="0" fill="none" stroke="#334155" stroke-width="2" opacity="0.3"/>
+</svg>

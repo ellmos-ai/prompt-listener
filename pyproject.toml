@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,7 @@ version = "1.0.3"
 description = "Versioned fork-master template: 5-stage prompt/session analysis pipeline plus AgentEvent v2 provenance schema for human-AI interaction research"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
 license-files = ["LICENSE", "THIRD_PARTY_LICENSES.md"]
 authors = [{ name = "Lukas Geiger" }]
 keywords = [
@@ -26,7 +26,6 @@ classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -55,6 +54,13 @@ Security = "https://github.com/ellmos-ai/prompt-listener/blob/master/SECURITY.md
 "Umbrella Ecosystem" = "https://github.com/open-bricks"
 "Marketing Log" = "https://github.com/ellmos-ai/prompt-listener/blob/master/MARKETING-LOG.txt"
 "LLM Ready" = "https://github.com/ellmos-ai/prompt-listener/blob/master/llms.txt"
+
+[tool.setuptools]
+packages = ["schema"]
+py-modules = ["prompt_analyzer", "stage0_agent_event", "fixture_corpus"]
+
+[tool.setuptools.package-data]
+schema = ["*.schema.json"]
 
 [tool.pytest.ini_options]
 minversion = "7.0"

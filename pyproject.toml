@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,7 @@ version = "1.0.3"
 description = "Versioned fork-master template: 5-stage prompt/session analysis pipeline plus AgentEvent v2 provenance schema for human-AI interaction research"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
 license-files = ["LICENSE", "THIRD_PARTY_LICENSES.md"]
 authors = [{ name = "Lukas Geiger" }]
 keywords = [
@@ -26,7 +26,6 @@ classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -39,7 +38,8 @@ classifiers = [
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0.0",
-    "ruff>=0.4.0"
+    "ruff>=0.4.0",
+    "tomli>=2.0; python_version < '3.11'"
 ]
 
 [project.urls]
@@ -56,6 +56,13 @@ Security = "https://github.com/ellmos-ai/prompt-listener/blob/master/SECURITY.md
 "Marketing Log" = "https://github.com/ellmos-ai/prompt-listener/blob/master/MARKETING-LOG.txt"
 "LLM Ready" = "https://github.com/ellmos-ai/prompt-listener/blob/master/llms.txt"
 
+[tool.setuptools]
+packages = ["schema"]
+py-modules = ["prompt_analyzer", "stage0_agent_event", "fixture_corpus"]
+
+[tool.setuptools.package-data]
+schema = ["*.schema.json"]
+
 [tool.pytest.ini_options]
 minversion = "7.0"
 pythonpath = ["."]
@@ -66,3 +73,8 @@ norecursedirs = [".git", ".pytest_cache", "__pycache__", ".ruff_cache", "_result
 [tool.ruff]
 line-length = 120
 target-version = "py310"
+
+[tool.ruff.lint]
+# Preserve the defaults of the originally declared Ruff 0.4 baseline.
+# https://github.com/astral-sh/ruff/blob/v0.4.0/docs/configuration.md
+select = ["E4", "E7", "E9", "F"]

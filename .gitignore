@@ -39,6 +39,10 @@ LOCK.user.*
 LOCK.until.*
 LOCK.condition.*
 
+# Internal agent run logs & status logs (GITHUB-POLICY T-20260926-455218633)
+*MARKETING-LOG.txt
+*STATUS-LOG.txt
+
 # Package & build artifacts
 uv.lock
 !package-lock.json

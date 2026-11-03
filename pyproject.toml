@@ -53,7 +53,6 @@ Security = "https://github.com/ellmos-ai/prompt-listener/blob/master/SECURITY.md
 "Third-Party Licenses" = "https://github.com/ellmos-ai/prompt-listener/blob/master/THIRD_PARTY_LICENSES.md"
 "Parent Organization" = "https://github.com/ellmos-ai"
 "Umbrella Ecosystem" = "https://github.com/open-bricks"
-"Marketing Log" = "https://github.com/ellmos-ai/prompt-listener/blob/master/MARKETING-LOG.txt"
 "LLM Ready" = "https://github.com/ellmos-ai/prompt-listener/blob/master/llms.txt"
 
 [tool.setuptools]

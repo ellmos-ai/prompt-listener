@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased]
+
+- **Repository-Hygiene & GITHUB-POLICY-Härtung (Pfad A, T-20260926-455218633):**
+  - Git-Tracking für interne Protokolle (`MARKETING-LOG.txt`) per `git rm --cached` entfernt und dauerhaft in `.gitignore` verankert (`*MARKETING-LOG.txt`, `*STATUS-LOG.txt`).
+  - `[project.urls]` in `pyproject.toml` bereinigt (privaten Log-Verweis entfernt).
+  - Vertragstests in `tests/test_metadata.py` um `test_github_policy_clean_tracking_and_no_private_logs` und `test_pep639_license_classifiers_disjointness` erweitert (Testbestand auf 33 erhöht, 100% bestanden).
+  - Shields.io-Badges in `README.md` und `README_de.md` auf 33 bestandene Tests synchronisiert.
+
 ## [1.0.3] - 2026-09-18
 
 - **CI-Matrix- & Workflow-Härtung (Pfad A):** Vollständige Bereitstellung von GitHub Actions Workflows (`.github/workflows/`): `ci.yml` mit Multi-OS-Matrix (`ubuntu-latest`, `windows-latest`) über Python 3.10, 3.11, 3.12 und 3.13, Least-Privilege `contents: read`, Concurrency `cancel-in-progress: true` und 15-Minuten-Timeout; `stale.yml` (actions/stale@v9, täglicher Cron um 01:30 UTC, 10m Timeout); `welcome.yml` (actions/first-interaction@v3, 5m Timeout).

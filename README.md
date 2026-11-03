@@ -14,7 +14,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-31%20passed%20%7C%20100%25-brightgreen.svg)](tests/)
+[![Tests](https://img.shields.io/badge/tests-33%20passed%20%7C%20100%25-brightgreen.svg)](tests/)
 [![Network: Zero Egress](https://img.shields.io/badge/network-zero%20egress%20(default)-success.svg)](SECURITY.md)
 [![Schema: AgentEvent v2](https://img.shields.io/badge/schema-AgentEvent%20v2-orange.svg)](schema/agent_event_v2.py)
 [![Architecture: Cell | Fork-Master](https://img.shields.io/badge/architecture-cell%20%7C%20fork--master-purple.svg)](FORKS.md)

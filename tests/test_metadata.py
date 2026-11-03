@@ -39,7 +39,7 @@ def test_readme_shields_badges():
     required_badges_en = [
         "python-3.10+",
         "License-MIT",
-        "tests-31%20passed",
+        "tests-33%20passed",
         "zero%20egress",
         "AgentEvent%20v2",
         "cell%20%7C%20fork--master",
@@ -50,7 +50,7 @@ def test_readme_shields_badges():
     required_badges_de = [
         "python-3.10+",
         "Lizenz-MIT",
-        "tests-31%20bestanden",
+        "tests-33%20bestanden",
         "zero%20egress",
         "AgentEvent%20v2",
         "zellmodell%20%7C%20fork--master",
@@ -140,7 +140,6 @@ def test_manifest_consistency_and_pyproject_urls():
         "Third-Party Licenses",
         "Parent Organization",
         "Umbrella Ecosystem",
-        "Marketing Log",
         "LLM Ready",
     ]
     for key in expected_urls:
@@ -214,6 +213,10 @@ def test_gitignore_multihost_and_locks():
     assert "LOCK" in content
     assert "LOCK.permissions.json" in content
     assert "LOCK.user.*" in content
+
+    # Internal agent run logs (GITHUB-POLICY T-20260926-455218633)
+    assert "*MARKETING-LOG.txt" in content
+    assert "*STATUS-LOG.txt" in content
 
     # Build & tool caches
     assert "uv.lock" in content
@@ -293,3 +296,29 @@ def test_marketing_log_recency():
     assert "Release 1.0.3" in content
     assert "2026-09-18" in content
     assert "Pfad A" in content
+
+
+def test_github_policy_clean_tracking_and_no_private_logs():
+    """Verify per GITHUB-POLICY T-20260926-455218633 that internal run logs are never tracked in git."""
+    import subprocess
+    result = subprocess.run(
+        ["git", "ls-files", "*MARKETING-LOG.txt", "*STATUS-LOG.txt", "BEFUNDE.md", "TASKPLAN_STATUS_*.md"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    tracked_files = [line.strip() for line in result.stdout.splitlines() if line.strip()]
+    assert not tracked_files, f"Internal/forbidden files tracked in git: {tracked_files}"
+
+
+def test_pep639_license_classifiers_disjointness():
+    """Verify PEP 639 rule: license string expression must not co-exist with License :: classifiers."""
+    pyproject_path = ROOT / "pyproject.toml"
+    with open(pyproject_path, "rb") as f:
+        pyproject = tomllib.load(f)
+    license_str = pyproject["project"].get("license")
+    classifiers = pyproject["project"].get("classifiers", [])
+    if license_str:
+        license_classifiers = [c for c in classifiers if c.startswith("License ::")]
+        assert not license_classifiers, f"PEP 639 violation: license string '{license_str}' coexists with {license_classifiers}"

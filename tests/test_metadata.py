@@ -293,3 +293,29 @@ def test_marketing_log_recency():
     assert "Release 1.0.3" in content
     assert "2026-09-18" in content
     assert "Pfad A" in content
+
+def test_final_gate_compliance_and_pep561():
+    """Verify PEP 561 py.typed marker and TODO.md STATUS table compliance."""
+    py_typed = ROOT / "schema" / "py.typed"
+    assert py_typed.is_file(), "schema/py.typed must exist for PEP 561 compliance"
+
+    # Pyproject classifier
+    pyproject_path = ROOT / "pyproject.toml"
+    with open(pyproject_path, "rb") as f:
+        pyproject = tomllib.load(f)
+    classifiers = pyproject["project"].get("classifiers", [])
+    assert "Typing :: Typed" in classifiers, "Typing :: Typed classifier missing in pyproject.toml"
+    package_data = pyproject.get("tool", {}).get("setuptools", {}).get("package-data", {}).get("schema", [])
+    assert "py.typed" in package_data, "py.typed missing in tool.setuptools.package-data.schema"
+
+    # TODO.md STATUS table compliance
+    todo_text = (ROOT / "TODO.md").read_text(encoding="utf-8")
+    assert "## STATUS" in todo_text, "TODO.md must have a ## STATUS section"
+    assert "| Category" in todo_text, "TODO.md must have a | Category column"
+    assert "10/10 Gates" in todo_text, "TODO.md must document 10/10 Gates pass"
+    assert "Version 1.0.3" in todo_text, "TODO.md must document Version 1.0.3"
+
+    # Verify Enum value integrity
+    from schema.agent_event_v2 import ToolCallRiskCategory
+    assert ToolCallRiskCategory.TOKEN_SECRET.value == "token_secret"
+

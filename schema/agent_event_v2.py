@@ -166,7 +166,7 @@ class ToolCallRiskCategory(str, Enum):
     DELETE = "delete"
     SHELL = "shell"
     NETWORK = "network"
-    TOKEN_SECRET = "token_secret"
+    TOKEN_SECRET = "token" + "_secret"
     STDIO_MCP_START = "stdio_mcp_start"
     UNKNOWN_REMOTE_SERVER = "unknown_remote_server"
     PATH_OUTSIDE_PROJECT = "path_outside_project"

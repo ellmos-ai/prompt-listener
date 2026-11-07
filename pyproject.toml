@@ -32,7 +32,8 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
-    "Topic :: Software Development :: Quality Assurance"
+    "Topic :: Software Development :: Quality Assurance",
+    "Typing :: Typed"
 ]
 
 [project.optional-dependencies]
@@ -61,7 +62,7 @@ packages = ["schema"]
 py-modules = ["prompt_analyzer", "stage0_agent_event", "fixture_corpus"]
 
 [tool.setuptools.package-data]
-schema = ["*.schema.json"]
+schema = ["*.schema.json", "py.typed"]
 
 [tool.pytest.ini_options]
 minversion = "7.0"
